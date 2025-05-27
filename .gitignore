@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder attributes
+Icon?
+._*
+
+# macOS resource forks
+.Spotlight-V100
+.Trashes
+
+# vsCode settings
+.vscode/
+.vscode/settings.json

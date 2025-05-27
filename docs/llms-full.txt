@@ -1,0 +1,1642 @@
+---
+title: "what3words Developer Documentation and API Reference - Full Guide"
+description: "Comprehensive guide to integrating what3words location technology including detailed API references, SDKs, components, implementation tutorials, case studies, troubleshooting, best practices, and data schemas."
+keywords: "what3words, 3 word address, location API, geocoding, address system, developer tools, mapping integration, SDK, autosuggest, API reference, API examples, word list schema, API best practices, troubleshooting"
+author: "what3words Developer Team"
+last_updated: "May 27, 2025"
+---
+
+# what3words Developer Documentation - Full Guide
+
+> **what3words** is a global addressing system that has divided the world into 3m squares, each with a unique 3 word address. This comprehensive documentation provides detailed resources for developers integrating what3words technology, covering APIs, SDKs, components, best practices, and advanced topics.
+
+## GET STARTED
+
+This section provides essential resources for beginning your integration with what3words technology.
+
+- [Overview](https://developer.what3words.com/public-api) – Introduction to what3words API capabilities and integration options
+- [UX guidelines](https://developer.what3words.com/tutorial/ux-guidelines/) – Fundamental user experience considerations for integrating what3words
+- [Migrating an application from API V2 to API V3](https://developer.what3words.com/tutorial/migrating-an-application-from-api-v2-to-api-v3/) – Guide to transition applications from what3words API version 2 to version 3
+
+## SEARCH BOX
+
+Implement what3words address search functionality across different platforms with these integration guides.
+
+### Web Search Box
+
+Add what3words address search to websites and web applications.
+
+- [Using the JavaScript AutoSuggest Component (v5)](https://developer.what3words.com/tutorial/using-the-javascript-autosuggest-component-v5/) – Add a what3words AutoSuggest input box to your website
+
+### iOS Search Box SDK
+
+Implement what3words address search in iOS applications.
+
+- [Creating an AutoSuggest field in Swift](https://developer.what3words.com/tutorial/creating-an-autosuggest-text-field-with-swift/) – Add a 3 word address text field with AutoSuggest to an iOS app (Swift)
+- [Creating an AutoSuggest field in Objective-C](https://developer.what3words.com/tutorial/creating-an-autosuggest-text-field-with-objective-c/) – Add a 3 word address text field with AutoSuggest (dropdown) to an iOS app (Obj-C)
+
+### Android Search Box SDK
+
+Implement what3words address search in Android applications.
+
+- [Creating an AutoSuggest field in Android](https://developer.what3words.com/tutorial/creating-an-android-autosuggest-edittext-field-with-the-what3words-autosuggest-component/) – Add a 3 word address input (AutoSuggest EditText) to an Android app
+
+### E-commerce plugins
+
+Add what3words address functionality to e-commerce platforms for precise delivery locations.
+
+- [Shopify app](https://developer.what3words.com/tutorial/adding-the-what3words-shopify-app/) – Installing and configuring the what3words Shopify (Plus and Basic) apps
+- [WooCommerce plugin](https://developer.what3words.com/tutorial/installing-the-what3words-address-field-plugin-for-woocommerce/) – Installing and configuring the what3words WooCommerce address field plugin
+- [Adobe Commerce (Magento 2) extension](https://developer.what3words.com/tutorial/installing-the-adobe-commerce-formerly-magento-2-extension/) – Installing and configuring the what3words Adobe Commerce (Magento 2) extension
+- [Adding what3words to e-commerce checkout](https://developer.what3words.com/tutorial/adding-what3words-to-e-commerce-checkout/) – Enable customers to enter 3 word addresses at checkout for precise delivery locations
+- [BigCommerce app](https://developer.what3words.com/tutorial/installing-the-what3words-bigcommerce-app/) – Installing and configuring the what3words BigCommerce app
+- [Ecwid on Wix integration](https://developer.what3words.com/tutorial/adding-your-what3words-ecwid-app-to-your-wix-site/) – Adding the what3words Ecwid app to a Wix site
+- [Shopware plugin](https://developer.what3words.com/tutorial/installing-the-what3words-shopware-plugin/) – Installing and configuring the what3words Shopware plugin
+- [Ecwid app](https://developer.what3words.com/tutorial/installing-the-what3words-ecwid-app/) – Installing and configuring the what3words Ecwid app
+- [AeroCommerce extension](https://developer.what3words.com/tutorial/installing-the-what3words-aerocommerce-extension/) – Installing and configuring the what3words AeroCommerce extension
+- [CubeCart extension](https://developer.what3words.com/tutorial/installing-the-what3words-cubecart-extension/) – Installing and configuring the what3words CubeCart extension
+- [OpenCart extension](https://developer.what3words.com/tutorial/installing-the-what3words-opencart-extension/) – Installing and configuring the what3words OpenCart plugin
+- [WordPress plugin](https://developer.what3words.com/tutorial/installing-the-what3words-address-field-plugin-for-wordpress/) – Installing and configuring the what3words WordPress address field plugin
+- [Adobe Commerce (Magento 1) extension](https://developer.what3words.com/tutorial/installing-the-adobe-commerce-formerly-magento-1-extension/) – Installing and configuring the what3words Adobe Commerce (Magento 1) extension
+- [Haravan store integration](https://developer.what3words.com/tutorial/adding-what3words-field-to-your-haravan-store/) – *Thêm trường what3words vào cửa hàng Haravan* (adding AutoSuggest field to Haravan checkout)
+
+### Delivery notes component
+
+Add what3words address input to existing text fields.
+
+- [Using the Notes Component](https://developer.what3words.com/tutorial/using-the-notes-component/) – Add a what3words address field to an existing textarea using the Notes Component
+
+### Enable Existing Search Box
+
+Integrate what3words into existing search functionality.
+
+- [Ride-hailing Integration – How to add what3words to a ride-hailing platform](https://developer.what3words.com/tutorial/ride-hailing/) – Guide to integrate what3words into a ride-hailing platform
+
+## CONVERSIONS
+
+Convert between what3words addresses and geographic coordinates using the API.
+
+- [what3words → coordinates](https://developer.what3words.com/public-api/docs#convert-to-coords) – Convert a 3 word address to latitude and longitude coordinates (See API Reference below)
+- [Coordinates → what3words](https://developer.what3words.com/public-api/docs#convert-to-3wa) – Convert latitude and longitude coordinates to a 3 word address (See API Reference below)
+
+## CONVERSATIONAL CHAT
+
+Integrate what3words with AI and conversational interfaces.
+
+- [AI & LLM integrations](#ai-llm) – *New page coming soon* - Integrate what3words with AI assistants and large language models
+
+## POSTAL ADDRESSES VIA SWIFTCOMPLETE
+
+Enhance address input with Swiftcomplete's address autocomplete, validation, and geocoding.
+
+### Address Autocomplete
+
+Implement address autocomplete functionality across platforms.
+
+#### Plugins
+
+Add address autocomplete to e-commerce platforms.
+
+- [Swiftcomplete Address Autocomplete - Shopify](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-shopify) – Implement address autocomplete in Shopify stores
+- [Swiftcomplete Address Autocomplete - WooCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-woocommerce) – Implement address autocomplete in WooCommerce stores
+- [Swiftcomplete Address Autocomplete - BigCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-bigcommerce) – Implement address autocomplete in BigCommerce stores
+- [Adding Swiftcomplete Address Autocomplete to E-commerce Checkout](https://developer.what3words.com/tutorial/adding-swiftcomplete-address-autocomplete-to-ecommerce-checkout/) – General guide for adding address autocomplete to e-commerce platforms
+
+#### Web and Mobile Components
+
+Implement address autocomplete in custom applications.
+
+- [Swiftcomplete Address Autocomplete - JavaScript Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-javascript-component) – Add address autocomplete to websites and web applications
+- [Swiftcomplete Address Autocomplete - iOS Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-ios-component) – Add address autocomplete to iOS applications
+- [Swiftcomplete Address Autocomplete - Android Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-android) – Add address autocomplete to Android applications
+
+#### API
+
+Direct API access for address autocomplete.
+
+- [Swiftcomplete Address Autocomplete API](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-api) – Integrate address autocomplete via direct API calls
+
+### Address Validation
+
+Validate postal addresses for accuracy and deliverability.
+
+*No tutorials available yet*
+
+### Batch Validation
+
+Process multiple addresses for validation in batch operations.
+
+*No tutorials available yet*
+
+### Geocoding
+
+Convert postal addresses to geographic coordinates.
+
+*No tutorials available yet*
+
+## ENTERPRISE SUITE
+
+Advanced solutions for enterprise-level integrations with offline capabilities.
+
+- [Overview](https://developer.what3words.com/enterprise-suite) – Introduction to what3words Enterprise Suite capabilities
+- [Mobile SDKs](https://developer.what3words.com/enterprise-suite/mobile-offline-sdk) – Offline-capable SDKs for mobile applications
+- [C++ & Java SDKs](https://developer.what3words.com/enterprise-suite/cpp-java-sdk) – Native SDKs for C++ and Java applications
+- [Self-Hosted API](https://developer.what3words.com/enterprise-suite/api-server) – Host the what3words API on your own infrastructure
+
+## DISPLAY MAP
+
+Visualize what3words grid and addresses on maps across platforms.
+
+### Web Map component
+
+Display what3words grid on web-based maps.
+
+- [Using the Web Map Component](https://developer.what3words.com/tutorial/using-the-web-map-component/) – Display the what3words 3m grid and marker on a Google Map (web)
+
+### iOS Map SDK
+
+Display what3words grid on iOS maps.
+
+- [Using the iOS Map Component](https://developer.what3words.com/tutorial/using-the-ios-map-component/) – Display the what3words grid and marker on Apple Maps in an iOS app
+
+### Android Map SDK
+
+Display what3words grid on Android maps.
+
+- [Using the Android Map Component](https://developer.what3words.com/tutorial/using-the-android-map-component/) – Display the what3words grid and a 3 word address marker on Google Maps/Mapbox in an Android app
+
+### Others (Google/Mapbox/Leaflet/Bing)
+
+Integrate what3words with various mapping frameworks.
+
+- [Displaying the what3words grid on a Google Map](https://developer.what3words.com/tutorial/displaying-the-what3words-grid-on-a-google-map/) – Add a Google Map to your site with the what3words grid overlay
+- [Displaying the what3words grid on a Mapbox Map](https://developer.what3words.com/tutorial/displaying-the-what3words-grid-on-a-mapbox-map/) – Add a Mapbox map to your site with the what3words grid overlay
+- [Displaying the what3words grid on a LeafletJS Map](https://developer.what3words.com/tutorial/displaying-the-what3words-grid-on-a-leafletjs-map/) – Add a LeafletJS map to your site with the what3words grid overlay
+- [Displaying the what3words grid on a Bing Map](https://developer.what3words.com/tutorial/displaying-the-what3words-grid-on-a-bing-maps/) – Add a Bing Maps component to your website showing the what3words 3m grid
+- [Combining AutoSuggest with a Google Map](https://developer.what3words.com/tutorial/combining-the-what3words-js-autosuggest-component-with-a-google-map/) – Integrate the what3words AutoSuggest field with a Google Maps API map on your site
+- [Combining AutoSuggest with a Mapbox GL JS map](https://developer.what3words.com/tutorial/combining-the-what3words-js-autosuggest-component-with-a-mapbox-map/) – Integrate the what3words AutoSuggest field with a Mapbox GL JS map on your website
+- [Combining AutoSuggest with a LeafletJS map](https://developer.what3words.com/tutorial/combining-the-what3words-js-autosuggest-component-with-a-leafletjs-map/) – Integrate the what3words AutoSuggest field with a Leaflet map on your website
+
+## SCANNING
+
+Scan and recognize what3words addresses from images.
+
+### iOS OCR Component
+
+Implement optical character recognition for what3words addresses in iOS apps.
+
+- [Using the iOS OCR Component](https://developer.what3words.com/tutorial/using-the-ios-ocr-component/) – Scan images for what3words addresses in an iOS app using the OCR component
+
+### Android OCR Component
+
+Implement optical character recognition for what3words addresses in Android apps.
+
+- [Using the Android OCR Component](https://developer.what3words.com/tutorial/using-the-android-ocr-component/) – Scan images for what3words addresses in an Android app using the OCR component
+
+## SPEECH-TO-TEXT
+
+Convert spoken what3words addresses to text.
+
+- [Using inputType=voice](https://developer.what3words.com/public-api/docs#speech-recognition) – Implement speech recognition for what3words addresses (See `/autosuggest` API endpoint details)
+
+## GIS & SPREADSHEET TOOLS
+
+Integrate what3words with geographic information systems and spreadsheet applications.
+
+### Excel Add-in
+
+Use what3words in Microsoft Excel.
+
+- [what3words for Excel add-in](https://developer.what3words.com/tutorial/using-the-what3words-for-excel-add-in/) – Use Excel to convert coordinates to 3 word addresses (and vice versa), translate addresses, and get AutoSuggest results
+
+### GSheets Add-in
+
+Use what3words in Google Sheets.
+
+- [what3words for Google Sheets add-on](https://developer.what3words.com/tutorial/using-the-what3words-for-google-sheets-add-on/) – Use Google Sheets to convert coordinates to 3 word addresses, translate them, and get AutoSuggest suggestions
+
+### ArcGIS extension
+
+Integrate what3words with Esri ArcGIS platform.
+
+- [ArcGIS Platform (All)](https://developer.what3words.com/tutorial/using-the-what3words-arcgis-locator-across-the-arcgis-platform/) – Use the what3words Locator across the ArcGIS platform
+- [ArcGIS Online (Locator)](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-arcgis-online/) – Add the what3words Locator to ArcGIS Online (as a utility service)
+- [ArcGIS Desktop (ArcMap/ArcCatalog)](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-arcgis-desktop/) – Add the what3words Locator to ArcGIS Desktop (ArcMap, ArcCatalog, ArcToolbox)
+- [ArcGIS Online & Survey123](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-arcgis-online-and-survey123/) – Add the what3words Locator to ArcGIS Online and set up a Survey123 form
+- [ArcMap (ArcGIS Desktop)](https://developer.what3words.com/tutorial/discover-and-search-for-3-word-addresses-in-arcmap/) – Use the geocoding toolbar in ArcMap (ArcGIS Desktop) with the what3words Locator
+- [ArcGIS Online: Search addresses](https://developer.what3words.com/tutorial/search-for-3-word-addresses-in-arcgis-online/) – Search for a 3 word address in ArcGIS Online and publish it in a web app
+- [ArcGIS Online: Plot CSV of addresses](https://developer.what3words.com/tutorial/how-to-plot-a-file-of-3-word-addresses-in-arcgis-online/) – Drag-and-drop a CSV of 3 word addresses onto an ArcGIS Online map
+- [ArcGIS Pro](https://developer.what3words.com/tutorial/using-the-what3words-arcgis-locator-within-arcgis-pro/) – Use the what3words Locator within ArcGIS Pro (desktop GIS)
+- [ArcGIS Enterprise (Portal)](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-portal-for-arcgis-enterprise/) – Add the what3words Locator to Portal for ArcGIS Enterprise
+- [ArcGIS Online & Field Maps](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-arcgis-online-and-field-maps/) – Add the what3words Locator to ArcGIS Online and set up a survey for Field Maps
+- [ArcGIS API for JavaScript](https://developer.what3words.com/tutorial/using-the-what3words-locator-within-arcgis-api-for-javascript/) – Use the what3words Locator within the ArcGIS API for JavaScript
+- [ArcGIS for SharePoint](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-arcgis-for-sharepoint/) – Add the what3words Locator to ArcGIS for SharePoint
+- [ArcGIS for Office (Excel & PowerPoint)](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-arcgis-for-office-excel-and-powerpoint/) – Add the what3words Locator to ArcGIS for Office (Microsoft Excel and PowerPoint)
+- [ArcGIS Experience Builder widget](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-experience-builder-for-arcgis/) – Add the what3words Locator to a custom ArcGIS Experience Builder widget
+- [ArcGIS Web AppBuilder widget](https://developer.what3words.com/tutorial/how-to-add-the-what3words-locator-to-web-appbuilder-for-arcgis/) – Add the what3words Locator to a custom ArcGIS Web AppBuilder widget
+
+### QGIS plugin
+
+Integrate what3words with QGIS open-source GIS.
+
+- [QGIS plugin (Planet Federal)](https://developer.what3words.com/tutorial/adding-the-planet-federal-what3words-plugin-to-qgis/) – Add and configure the what3words plugin for QGIS
+
+### Grid endpoints
+
+Access what3words grid data via API.
+
+- [Grid endpoints](https://developer.what3words.com/public-api/docs#grid-section) – API endpoints for retrieving what3words grid information (See API Reference below)
+
+### Other GIS integrations
+
+Integrate what3words with additional GIS platforms.
+
+- [GE Smallworld integration](https://developer.what3words.com/tutorial/how-to-add-the-what3words-java-api-for-ge-smallworld/) – Add the what3words Java API to GE Smallworld (GIS)
+- [Geocortex Essentials](https://developer.what3words.com/tutorial/configuring-geocortex-essentials-to-use-what3words/) – Configure Geocortex Essentials to use what3words services
+- [Cadcorp SIS WebMap](https://developer.what3words.com/tutorial/adding-what3words-to-cadcorp-sis-webmap/) – Add what3words support to your Cadcorp SIS WebMap instance
+- [MapInfo Pro](https://developer.what3words.com/tutorial/adding-the-what3words-extension-to-mapinfo-pro/) – Add and configure the what3words extension in MapInfo Pro
+
+## API & SDK REFERENCE
+
+Technical reference documentation for what3words APIs, SDKs, and data schemas.
+
+### API Overview
+
+General information about using the what3words REST API.
+
+- **Base URL:** `https://api.what3words.com/v3`
+- **Authentication:** The API uses an API key for authentication. This key must be provided either as a query parameter named `key` or in the `X-Api-Key` HTTP header.
+- **Response Format:** Most endpoints support an optional `format` parameter, which defaults to `json`. You can also specify `geojson` for endpoints that return geographic data.
+- **Error Handling:** The API returns standard HTTP status codes for errors. The response body typically contains a JSON object with an `error` field detailing the issue.
+    - The `error` object contains:
+        - `code`: A string code identifying the specific error (e.g., "BadCoordinates", "InvalidKey").
+        - `message`: A human-readable description of the error.
+- **Rate Limits & Quotas:** The what3words API enforces usage limits based on your API key and plan. These may include requests per second and total requests per month.
+    - Exceeding limits will result in an `HTTP 429 (Too Many Requests)` error.
+    - Implement appropriate error handling and rate limit management (e.g., exponential backoff) in your application.
+- **OpenAPI Specification:** [https://openapi.what3words.com/openapi/openapi.yaml](https://openapi.what3words.com/openapi/openapi.yaml)
+- **Postman Collection:** [https://openapi.what3words.com/what3words.postman_collection.json](https://openapi.what3words.com/what3words.postman_collection.json)
+- **Live Demo / Playground:** [https://developer.what3words.com/public-api/playground](https://developer.what3words.com/public-api/playground)
+
+### API Endpoints
+
+Detailed reference for each available API endpoint.
+
+#### `/convert-to-3wa`
+
+Converts latitude and longitude coordinates to a what3words address.
+
+- **Method:** `GET`
+- **Endpoint:** `https://api.what3words.com/v3/convert-to-3wa`
+- **Parameters:**
+
+| Parameter     | Required | Type   | Description                                                                                                |
+|---------------|----------|--------|------------------------------------------------------------------------------------------------------------|
+| `key`         | Yes      | string | Your valid what3words API key.                                                                             |
+| `coordinates` | Yes      | string | Latitude and longitude as a comma-separated string (e.g., "51.521251,-0.203586").                           |
+| `language`    | No       | string | A supported what3words address language code (ISO 639-1 2-letter code). Defaults to "en".                |
+| `format`      | No       | string | Response format. "json" (default) or "geojson".                                                          |
+| `locale`      | No       | string | Specify a variant of a language (e.g., for different scripts). See Word List Schema for available locales. |
+
+- **Common Errors:**
+
+| Code                 | Message                                                                        |
+|----------------------|--------------------------------------------------------------------------------|
+| `BadLanguage`        | Invalid language code provided.                                                |
+| `BadLocale`          | Language and locale codes are incompatible or invalid.                         |
+| `BadCoordinates`     | Invalid coordinates format. Ensure it's "latitude,longitude".                |
+| `MissingCoordinates` | The `coordinates` parameter is missing.                                        |
+| `BadFormat`          | Invalid `format` value. Must be "json" or "geojson".                           |
+| `InvalidKey`         | The provided API key is invalid or expired.                                    |
+| `DuplicateParameter` | A parameter was provided more than once in the request.                        |
+
+- **API Usage Notes:**
+    - Typically called per user request when needing to display a what3words address for a known coordinate.
+    - Validate coordinate format client-side if possible to reduce unnecessary API calls.
+    - Use the `language` parameter to return the address in the user's preferred language.
+
+- **Examples:**
+
+    **cURL**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/convert-to-3wa?coordinates=51.521251,-0.203586&key=YOUR_API_KEY"
+    ```
+
+    **JavaScript (Fetch API)**
+    ```javascript
+    fetch("https://api.what3words.com/v3/convert-to-3wa?coordinates=51.521251,-0.203586&key=YOUR_API_KEY")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log("what3words address:", data.words);
+        console.log("Nearest Place:", data.nearestPlace);
+        console.log("Coordinates:", data.coordinates);
+        console.log("Country:", data.country);
+        console.log("Map Link:", data.map);
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+    ```
+
+    **Python (requests)**
+    ```python
+    import requests
+
+    api_key = "YOUR_API_KEY"
+    coordinates = "51.521251,-0.203586"
+    url = f"https://api.what3words.com/v3/convert-to-3wa"
+
+    params = {
+        "coordinates": coordinates,
+        "key": api_key
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
+        data = response.json()
+
+        if "error" in data:
+            print(f"API Error: {data['error']['code']} - {data['error']['message']}")
+        else:
+            print(f"what3words address: {data.get('words')}")
+            print(f"Nearest Place: {data.get('nearestPlace')}")
+            print(f"Coordinates: {data.get('coordinates')}")
+            print(f"Country: {data.get('country')}")
+            print(f"Map Link: {data.get('map')}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    ```
+
+#### `/convert-to-coordinates`
+
+Converts a what3words address to latitude and longitude coordinates.
+
+- **Method:** `GET`
+- **Endpoint:** `https://api.what3words.com/v3/convert-to-coordinates`
+- **Parameters:**
+
+| Parameter | Required | Type   | Description                                                                                                |
+|-----------|----------|--------|------------------------------------------------------------------------------------------------------------|
+| `key`     | Yes      | string | Your valid what3words API key.                                                                             |
+| `words`   | Yes      | string | A what3words address (e.g., "filled.count.soap"). Use the correct delimiter for the language (usually '.'). |
+| `format`  | No       | string | Response format. "json" (default) or "geojson".                                                          |
+
+- **Common Errors:**
+
+| Code                 | Message                                                                     |
+|----------------------|-----------------------------------------------------------------------------|
+| `MissingWords`       | The `words` parameter is missing.                                           |
+| `BadWords`           | Invalid what3words address format or non-existent address.                  |
+| `BadFormat`          | Invalid `format` value. Must be "json" or "geojson".                        |
+| `InvalidKey`         | The provided API key is invalid or expired.                                 |
+| `DuplicateParameter` | A parameter was provided more than once in the request.                     |
+
+- **API Usage Notes:**
+    - Typically called per user request when needing coordinates for a known what3words address.
+    - Validate the input format (three words separated by the correct delimiter) client-side if possible.
+
+- **Examples:**
+
+    **cURL**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/convert-to-coordinates?words=filled.count.soap&key=YOUR_API_KEY"
+    ```
+
+    **JavaScript (Fetch API)**
+    ```javascript
+    fetch("https://api.what3words.com/v3/convert-to-coordinates?words=filled.count.soap&key=YOUR_API_KEY")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log("Coordinates:", data.coordinates);
+        console.log("Nearest Place:", data.nearestPlace);
+        console.log("Country:", data.country);
+        console.log("Map Link:", data.map);
+        console.log("Language:", data.language);
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+    ```
+
+    **Python (requests)**
+    ```python
+    import requests
+
+    api_key = "YOUR_API_KEY"
+    words = "filled.count.soap"
+    url = f"https://api.what3words.com/v3/convert-to-coordinates"
+
+    params = {
+        "words": words,
+        "key": api_key
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status() # Raise an exception for bad status codes (4xx or 5xx)
+        data = response.json()
+
+        if "error" in data:
+            print(f"API Error: {data['error']['code']} - {data['error']['message']}")
+        else:
+            print(f"Coordinates: {data.get('coordinates')}")
+            print(f"Nearest Place: {data.get('nearestPlace')}")
+            print(f"Country: {data.get('country')}")
+            print(f"Map Link: {data.get('map')}")
+            print(f"Language: {data.get('language')}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    ```
+
+#### `/autosuggest`
+
+Provides suggestions for valid what3words addresses based on partial or incorrect input. Ideal for user input fields.
+
+- **Method:** `GET`
+- **Endpoint:** `https://api.what3words.com/v3/autosuggest`
+- **Parameters:**
+
+| Parameter              | Required | Type    | Description                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------|----------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `key`                  | Yes      | string  | Your valid what3words API key.                                                                                                                                                                                                                                                                                                                                   |
+| `input`                | Yes      | string  | The partial or potentially incorrect what3words address being typed by the user. Must be at least the first two complete words plus one character of the third word for suggestions to be returned.                                                                                                                                                                      |
+| `n-results`            | No       | integer | The maximum number of suggestions to return (default: 3, max: 100).                                                                                                                                                                                                                                                                                              |
+| `focus`                | No       | string  | Latitude and longitude (e.g., "51.521251,-0.203586") to bias results towards. Suggestions closer to this point will be ranked higher.                                                                                                                                                                                                                          |
+| `n-focus-results`      | No       | integer | Specifies that the first `n-focus-results` suggestions should be biased towards the `focus` coordinate. Must be <= `n-results`. Defaults to `n-results`.                                                                                                                                                                                                           |
+| `clip-to-country`      | No       | string  | Restricts suggestions to one or more specific countries. Provide as a comma-separated list of ISO 3166-1 alpha-2 country codes (e.g., "GB,US,DE").                                                                                                                                                                                                                |
+| `clip-to-bounding-box` | No       | string  | Restricts suggestions to a specific rectangular area. Format: "southwest latitude,southwest longitude,northeast latitude,northeast longitude" (e.g., "51.515900,-0.212517,51.527649,-0.191746").                                                                                                                                                                    |
+| `clip-to-circle`       | No       | string  | Restricts suggestions to a circular area. Format: "center latitude,center longitude,radius in kilometers" (e.g., "51.4243877,-0.3474524,10").                                                                                                                                                                                                                  |
+| `clip-to-polygon`      | No       | string  | Restricts suggestions to a polygon defined by a comma-separated list of "latitude,longitude" pairs (e.g., "51.521,-0.343,52.6,1.343,51.1,-0.343").                                                                                                                                                                                                              |
+| `input-type`           | No       | string  | Specifies the source of the input. Options: "text" (default), "vocon-hybrid", "nmdp-asr", "generic-voice". Use voice options when input comes from a speech recognition system.                                                                                                                                                                                 |
+| `language`             | No       | string  | For text input, specifies the language to return suggestions in. For voice input (`input-type` != "text"), this **must** be provided and specifies the language of the input speech. Defaults to "en".                                                                                                                                                              |
+| `prefer-land`          | No       | boolean | Biases results towards land locations (default: true). Does not exclude sea locations but ranks them lower unless the input is an exact match for a sea location.                                                                                                                                                                                                |
+| `format`               | No       | string  | Response format. "json" (default) or "geojson".                                                                                                                                                                                                                                                                                                                |
+| `locale`               | No       | string  | Specify a variant of a language (e.g., for different scripts). See Word List Schema for available locales.                                                                                                                                                                                                                                                         |
+
+- **Common Errors:**
+
+| Code                  | Message                                                                                             |
+|-----------------------|-----------------------------------------------------------------------------------------------------|
+| `MissingInput`        | The `input` parameter is missing.                                                                   |
+| `BadFocus`            | Invalid `focus` format. Ensure it's "latitude,longitude".                                         |
+| `BadNResults`         | `n-results` is not a valid integer or is out of range (1-100).                                      |
+| `BadClipToCountry`    | Invalid country code format in `clip-to-country`. Use ISO 3166-1 alpha-2 codes.                     |
+| `BadClipToBoundingBox`| Invalid bounding box format in `clip-to-bounding-box`.                                              |
+| `BadClipToCircle`     | Invalid circle format in `clip-to-circle`.                                                          |
+| `BadClipToPolygon`    | Invalid polygon format in `clip-to-polygon`.                                                        |
+| `BadLanguage`         | Invalid language code provided.                                                                     |
+| `BadInputType`        | Invalid `input-type` value.                                                                         |
+| `BadLocale`           | Language and locale codes are incompatible or invalid.                                              |
+| `MissingLanguage`     | The `language` parameter is required when `input-type` is set to a voice option.                    |
+| `InvalidKey`          | The provided API key is invalid or expired.                                                         |
+| `DuplicateParameter`  | A parameter was provided more than once in the request.                                             |
+
+- **API Usage Notes:**
+    - **Frequency:** Call this endpoint as the user types into an input field. Implement debouncing (e.g., wait 200-300ms after the last keystroke) to avoid excessive calls.
+    - **Clipping vs. Focus:** Use `clip-to-*` parameters to *restrict* results to a specific area. Use `focus` to *bias* results towards an area without excluding others.
+    - **Voice Input:** When using `input-type` other than "text", the `language` parameter is mandatory. Format the `input` parameter according to the specific voice type (`generic-voice`, `vocon-hybrid`, `nmdp-asr`).
+    - **Minimum Input:** Remember that suggestions are typically only returned once the user has typed at least two full words and the first character of the third word.
+
+- **Examples:**
+
+    **cURL (Basic)**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/autosuggest?input=filled.count.s&key=YOUR_API_KEY"
+    ```
+
+    **cURL (With Focus and Clipping)**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/autosuggest?input=index.home.raft&focus=51.521251,-0.203586&clip-to-country=GB&n-results=5&key=YOUR_API_KEY"
+    ```
+
+    **JavaScript (Fetch API with Debounce - Conceptual)**
+    ```javascript
+    let debounceTimer;
+
+    function handleInput(inputValue) {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        fetchSuggestions(inputValue);
+      }, 300); // Debounce for 300ms
+    }
+
+    function fetchSuggestions(input) {
+      if (input.length < 7) { // Basic check for minimum input length
+        // Clear suggestions
+        return;
+      }
+      const apiKey = "YOUR_API_KEY";
+      const focus = "51.521251,-0.203586"; // Optional focus
+      const url = `https://api.what3words.com/v3/autosuggest?input=${encodeURIComponent(input)}&focus=${focus}&key=${apiKey}`;
+
+      fetch(url)
+        .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
+        .then(data => {
+          if (data.suggestions) {
+            console.log("Suggestions:", data.suggestions);
+            // Update your UI with suggestions here
+          } else if (data.error) {
+             console.error("API Error:", data.error.code, data.error.message);
+          }
+        })
+        .catch(error => {
+          console.error("Error fetching suggestions:", error);
+        });
+    }
+
+    // Example usage: Call handleInput(event.target.value) in your input field's event listener
+    ```
+
+    **Python (requests)**
+    ```python
+    import requests
+
+    api_key = "YOUR_API_KEY"
+    input_text = "filled.count.s"
+    url = f"https://api.what3words.com/v3/autosuggest"
+
+    params = {
+        "input": input_text,
+        "key": api_key,
+        "n-results": 5,
+        "focus": "51.521251,-0.203586" # Optional
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+
+        if "error" in data:
+            print(f"API Error: {data['error']['code']} - {data['error']['message']}")
+        elif "suggestions" in data:
+            print("Suggestions:")
+            for suggestion in data["suggestions"]:
+                print(f"- {suggestion['words']} ({suggestion['nearestPlace']}, {suggestion['country']})")
+        else:
+            print("No suggestions found or unexpected response.")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    ```
+
+#### `/autosuggest-with-coordinates`
+
+Similar to `/autosuggest`, but also returns coordinates for each suggestion. **Requires special permissions for your API key.** Contact what3words support for access.
+
+- **Method:** `GET`
+- **Endpoint:** `https://api.what3words.com/v3/autosuggest-with-coordinates`
+- **Parameters:** Same as `/autosuggest`.
+- **Common Errors:**
+    - Same as `/autosuggest`.
+    - `InvalidKeyNoPermissions`: The API key is valid but lacks the necessary permissions to use this endpoint.
+- **API Usage Notes:** Same as `/autosuggest`, but the response includes coordinates for each suggestion.
+- **Examples:**
+
+    **cURL**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/autosuggest-with-coordinates?input=filled.count.s&key=YOUR_API_KEY"
+    ```
+
+    **JavaScript (Fetch API)**
+    ```javascript
+    // Similar structure to /autosuggest example, but process coordinates in the response
+    fetch("https://api.what3words.com/v3/autosuggest-with-coordinates?input=filled.count.s&key=YOUR_API_KEY")
+      .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
+      .then(data => {
+        if (data.suggestions) {
+          console.log("Suggestions with coordinates:", data.suggestions);
+          data.suggestions.forEach(suggestion => {
+            console.log(` - ${suggestion.words}: ${suggestion.coordinates.lat}, ${suggestion.coordinates.lng}`);
+          });
+          // Update UI
+        } else if (data.error) {
+           console.error("API Error:", data.error.code, data.error.message);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching suggestions:", error);
+      });
+    ```
+
+    **Python (requests)**
+    ```python
+    import requests
+
+    api_key = "YOUR_API_KEY"
+    input_text = "filled.count.s"
+    url = f"https://api.what3words.com/v3/autosuggest-with-coordinates"
+
+    params = {
+        "input": input_text,
+        "key": api_key,
+        "n-results": 5
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+
+        if "error" in data:
+            print(f"API Error: {data['error']['code']} - {data['error']['message']}")
+        elif "suggestions" in data:
+            print("Suggestions with coordinates:")
+            for suggestion in data["suggestions"]:
+                coords = suggestion.get('coordinates', {})
+                print(f"- {suggestion['words']} ({suggestion['nearestPlace']}, {suggestion['country']}) -> Lat: {coords.get('lat')}, Lng: {coords.get('lng')}")
+        else:
+            print("No suggestions found or unexpected response.")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    ```
+
+#### `/grid-section`
+
+Returns the latitude and longitude coordinates of the what3words grid lines within a specified bounding box. Useful for displaying the grid on a map.
+
+- **Method:** `GET`
+- **Endpoint:** `https://api.what3words.com/v3/grid-section`
+- **Parameters:**
+
+| Parameter      | Required | Type   | Description                                                                                                                                                           |
+|----------------|----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `key`          | Yes      | string | Your valid what3words API key.                                                                                                                                        |
+| `bounding-box` | Yes      | string | The rectangular area for which to retrieve grid lines. Format: "south latitude,west longitude,north latitude,east longitude" (e.g., "52.207988,0.116126,52.208867,0.117540"). |
+| `format`       | No       | string | Response format. "json" (default) or "geojson".                                                                                                                     |
+
+- **Constraints:**
+    - The bounding box must not exceed **4km** measured diagonally from corner to corner.
+
+- **Common Errors:**
+
+| Code                 | Message                                                                                              |
+|----------------------|------------------------------------------------------------------------------------------------------|
+| `MissingBoundingBox` | The `bounding-box` parameter is missing.                                                             |
+| `BadBoundingBox`     | Invalid bounding box format.                                                                         |
+| `BadBoundingBoxTooBig`| The specified bounding box exceeds the 4km diagonal limit.                                             |
+| `BadFormat`          | Invalid `format` value. Must be "json" or "geojson".                                                 |
+| `InvalidKey`         | The provided API key is invalid or expired.                                                          |
+| `DuplicateParameter` | A parameter was provided more than once in the request.                                              |
+
+- **API Usage Notes:**
+    - Call this endpoint when a user needs to visualize the what3words grid on a map interface for a specific, relatively small area.
+    - Due to the size limit, you may need to make multiple calls if displaying the grid over a larger map view.
+    - Consider caching the results for frequently viewed areas to reduce API calls.
+
+- **Examples:**
+
+    **cURL**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/grid-section?bounding-box=52.207988,0.116126,52.208867,0.117540&key=YOUR_API_KEY"
+    ```
+
+    **JavaScript (Fetch API)**
+    ```javascript
+    fetch("https://api.what3words.com/v3/grid-section?bounding-box=52.207988,0.116126,52.208867,0.117540&key=YOUR_API_KEY")
+      .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
+      .then(data => {
+        if (data.lines) {
+          console.log("Grid lines received:", data.lines.length);
+          // Process the lines array to draw the grid on your map
+          // Each object in data.lines has 'start' and 'end' properties with 'lat' and 'lng'
+        } else if (data.error) {
+           console.error("API Error:", data.error.code, data.error.message);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching grid section:", error);
+      });
+    ```
+
+    **Python (requests)**
+    ```python
+    import requests
+
+    api_key = "YOUR_API_KEY"
+    bbox = "52.207988,0.116126,52.208867,0.117540"
+    url = f"https://api.what3words.com/v3/grid-section"
+
+    params = {
+        "bounding-box": bbox,
+        "key": api_key,
+        "format": "json" # Or "geojson"
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+
+        if "error" in data:
+            print(f"API Error: {data['error']['code']} - {data['error']['message']}")
+        elif "lines" in data:
+            print(f"Received {len(data['lines'])} grid lines.")
+            # Example: Print the start and end of the first line
+            if data['lines']:
+                first_line = data['lines'][0]
+                print(f"First line: Start({first_line['start']['lat']}, {first_line['start']['lng']}) -> End({first_line['end']['lat']}, {first_line['end']['lng']})")
+            # Integrate with your mapping library (e.g., Folium, Leaflet via JS) to draw lines
+        else:
+            print("No grid lines found or unexpected response.")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    ```
+
+#### `/available-languages`
+
+Retrieves a list of all languages currently supported by the what3words API for 3 word addresses.
+
+- **Method:** `GET`
+- **Endpoint:** `https://api.what3words.com/v3/available-languages`
+- **Parameters:**
+
+| Parameter | Required | Type   | Description                  |
+|-----------|----------|--------|------------------------------|
+| `key`     | Yes      | string | Your valid what3words API key. |
+
+- **Common Errors:**
+
+| Code                 | Message                                                  |
+|----------------------|----------------------------------------------------------|
+| `InvalidKey`         | The provided API key is invalid or expired.              |
+| `DuplicateParameter` | A parameter was provided more than once in the request.  |
+
+- **API Usage Notes:**
+    - Call this endpoint periodically (e.g., daily or weekly) or on application startup to get the latest list of supported languages.
+    - Use the response to populate language selection options in your user interface.
+    - The response includes the native name, English name, and the 2-letter code required by other API endpoints.
+
+- **Examples:**
+
+    **cURL**
+    ```bash
+    curl -X GET "https://api.what3words.com/v3/available-languages?key=YOUR_API_KEY"
+    ```
+
+    **JavaScript (Fetch API)**
+    ```javascript
+    fetch("https://api.what3words.com/v3/available-languages?key=YOUR_API_KEY")
+      .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
+      .then(data => {
+        if (data.languages) {
+          console.log("Available Languages:", data.languages.length);
+          // Example: Populate a dropdown menu
+          const languageSelect = document.getElementById('language-select'); // Assuming you have a select element
+          data.languages.forEach(lang => {
+            const option = document.createElement('option');
+            option.value = lang.code;
+            option.textContent = `${lang.nativeName} (${lang.name})`;
+            languageSelect.appendChild(option);
+          });
+        } else if (data.error) {
+           console.error("API Error:", data.error.code, data.error.message);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching available languages:", error);
+      });
+    ```
+
+    **Python (requests)**
+    ```python
+    import requests
+
+    api_key = "YOUR_API_KEY"
+    url = f"https://api.what3words.com/v3/available-languages"
+
+    params = {
+        "key": api_key
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+
+        if "error" in data:
+            print(f"API Error: {data['error']['code']} - {data['error']['message']}")
+        elif "languages" in data:
+            print(f"Found {len(data['languages'])} available languages:")
+            for lang in data["languages"]:
+                print(f"- Code: {lang['code']}, Name: {lang['name']}, Native Name: {lang['nativeName']}")
+        else:
+            print("Could not retrieve languages or unexpected response.")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    ```
+
+### Client libraries & wrappers
+
+Official API wrappers for various programming languages. These libraries simplify API interaction by handling request formatting, authentication, and response parsing.
+
+- [JavaScript API Wrapper](https://developer.what3words.com/tutorial/javascript/) – Getting started with the what3words JavaScript API wrapper
+- [Swift API Wrapper](https://developer.what3words.com/tutorial/swift/) – Getting started with the what3words Swift API wrapper
+- [Java API Wrapper](https://developer.what3words.com/tutorial/java/) – Getting started with the what3words Java API wrapper
+- [Python API Wrapper](https://developer.what3words.com/tutorial/python/) – Getting started with the what3words Python API wrapper
+- [PHP API Wrapper](https://developer.what3words.com/tutorial/php/) – Getting started with the what3words PHP API wrapper
+- [.NET API Wrapper](https://developer.what3words.com/tutorial/dotnet/) – Getting started with the what3words .NET API wrapper
+- [Ruby API Wrapper](https://developer.what3words.com/tutorial/ruby/) – Getting started with the what3words Ruby API wrapper
+- [Golang API Wrapper](https://developer.what3words.com/tutorial/golang/) – Getting started with the what3words Go API wrapper
+- [Rust API Wrapper](https://developer.what3words.com/tutorial/rust/) – Getting started with the what3words Rust API wrapper
+- [Dart API Wrapper](https://developer.what3words.com/tutorial/dart/) – Getting started with the what3words Dart API wrapper
+- [Flutter API Wrapper](https://developer.what3words.com/tutorial/flutter/) – Getting started with the what3words Flutter API wrapper
+- [Android API Wrapper (v4)](https://developer.what3words.com/tutorial/android/) – Getting started with the what3words Android API wrapper
+- [Migrating Android API Wrapper from 3.x to 4.x](https://developer.what3words.com/tutorial/migrating-android-api-wrapper-from-version-3x-to-4x/) – Update guide for the Android wrapper (v3 to v4)
+- [Objective-C API Wrapper](https://developer.what3words.com/tutorial/objective-c/) – Getting started with the what3words Objective-C API wrapper
+- [Legacy Android API Wrapper](https://developer.what3words.com/tutorial/legacy-android/) – (v3.x) Getting started with the older what3words Android API wrapper
+
+### Regex
+
+Validate what3words addresses without API calls using regular expressions.
+
+- [Detecting if text is a what3words address using RegEx](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-what3words-address-using-regex/) – Check if a string matches the pattern of a 3 word address without calling the API. Note: This only checks the format, not if the address actually exists.
+
+### Error codes & rate limits
+
+Understand API error handling and usage limits.
+
+- [Error codes & rate limits](https://developer.what3words.com/public-api/docs#error-handling) – Reference for API error codes and rate limiting policies (See also API Overview above).
+
+### Playground
+
+Interactive API testing environment.
+
+- [Playground](https://developer.what3words.com/public-api/playground) – Test what3words API endpoints interactively
+
+## DATA SCHEMAS
+
+Understanding the structure and characteristics of what3words data.
+
+### Word List Schema
+
+This schema defines the properties and characteristics of each language's word list used by what3words.
+
+#### Schema Definition
+
+| Column | Data type | Meaning | Example |
+| --- | --- | --- | --- |
+| `language_name` | string | English name of the word-list language. | Bosnian |
+| `iso_639_1` | string (2-letter) | Standard ISO-639-1 code (not always accepted by the What3Words API). | bs |
+| `w3w_api_lang_code` | string (usually 2-letter) | Language code required by the What3Words API; may differ from ISO (e.g. Bosnian “oo”). | oo |
+| `w3w_locale_code` | string (optional) | Locale/script variant used by the API when a language has multiple writing systems; empty when only one script exists. | oo_cy |
+| `script` | string | Writing script used **in this row’s** word list (Latin, Cyrillic, Arabic …). Languages with multiple scripts have one row per script. | Cyrillic |
+| `is_default_display_locale` | boolean | TRUE if this row is the preferred display script/locale for its language; FALSE otherwise (exactly one TRUE per language group). | TRUE |
+| `locale_note` | string (optional) | Extra notes about the locale/script. | — |
+| `writing_direction` | enum (ltr | rtl) | Text-flow direction for the script. | rtl |
+| `default_word_delimiter` | string (1 Unicode code-point) | Canonical delimiter shown in docs (., ・, etc.); the API also accepts alternates. | . |
+| `has_secondary_words` | boolean | TRUE if the word-list includes secondary forms (e.g. diacritic substitutes, homophones, script transliterations, spacing changes). | TRUE |
+| `secondary_words_note` | string (optional) | Language-specific explanation of secondary forms (e.g. “homophones of –er verbs”). | Handles common French homophones … |
+| `allow_internal_spaces` | boolean | TRUE if a single dictionary word may legally contain internal spaces. | TRUE (Vietnamese) |
+| `internal_spaces_note` | string (optional) | Explanation of edge cases (e.g. Vietnamese “all-or-nothing” rule). | Vietnamese orthography allows … |
+| `min_word_len_codepoints` | integer | Shortest dictionary-word length in characters. | 4 |
+| `max_word_len_codepoints` | integer | Longest dictionary-word length in characters. | 18 |
+| `min_addr_len_codepoints` | integer | Shortest full 3-word address length in characters (excluding leading ///). | 14 |
+| `max_addr_len_codepoints` | integer | Longest full 3-word address length in characters (excluding leading ///). | 56 |
+| `///_marker_logical_pos` | enum (prefix | suffix) | Logical position of the “///” marker relative to the address. | prefix |
+| `///_marker_visual_edge` | enum (left | right) | Edge the “///” marker visually touches in the reading direction. | left |
+
+
+#### Global Rules & Notes
+
+- what3Words Language List – updated **2025-04-28**
+- Booleans appear as **TRUE / FALSE** (case-insensitive).
+- Blank cells = “not applicable”.
+- Character-length columns count **Unicode code points** (not bytes or grapheme clusters).
+- A “locale” = alternative script for typing the same word list.
+- `w3w_locale_code` is blank if only one writing system exists.
+- A “secondary word” = alternative input form (e.g. phonetic spelling or no spaces).
+- Each language group has one `is_default_display_locale = TRUE`.
+- For languages with multiple scripts (e.g. `zh_si` vs `zh_tr`), each script has its own row—but all scripts share identical word-to-location mappings.
+- API code `"oo"` is used by Bosnian, Croatian, Montenegrin, and Serbian to indicate shared word lists (Latin & Cyrillic), despite different ISO codes.
+- Chinese and Japanese use different default delimiters on purpose.
+
+#### Languages Table
+
+| language_name | iso_639_1 | w3w_api_lang_code | w3w_locale_code | script | is_default_display_locale | locale_note | writing_direction | default_word_delimiter | has_secondary_words | secondary_words_note | allow_internal_spaces | internal_spaces_note | min_word_len_codepoints | max_word_len_codepoints | min_addr_len_codepoints | max_addr_len_codepoints | ///_marker_logical_pos | ///_marker_visual_edge |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Afrikaans | af | af |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 16 | 14 | 50 | prefix | left |
+| Amharic | am | am |   | Ethiopic | True |   | ltr | . | False |   | False |   | 2 | 7 | 8 | 23 | prefix | left |
+| Arabic | ar | ar |   | Arabic | True |   | rtl | . | False |   | False |   | 3 | 12 | 11 | 38 | prefix | right |
+| Bahasa Indonesia | id | id |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
+| Bahasa Malaysia | ms | ms |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 17 | 14 | 53 | prefix | left |
+| Bengali | bn | bn |   | Bengali | True |   | ltr | . | True | Some characters that look identical can be typed in more than one way | False |   | 3 | 20 | 11 | 62 | prefix | left |
+| Bosnian | bs | oo | oo_cy | Cyrillic | False |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Bosnian | bs | oo | oo_la | Latin | True |   | ltr | . | True | Note: 'đ' can also be inputted as 'dj' | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Bulgarian | bg | bg |   | Cyrillic | True |   | ltr | . | False |   | False |   | 4 | 16 | 14 | 50 | prefix | left |
+| Catalan | ca | ca |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Chinese | zh | zh | zh_si | Han (Simplified) | True | Some zh_si words are identical to their zh_tr equivalent - this is because the Simplified and Traditional characters for these words are the same. | ltr | . | False |   | False |   | 2 | 4 | 8 | 14 | prefix | left |
+| Chinese | zh | zh | zh_tr | Han (Traditional) | False | Some zh_si words are identical to their zh_tr equivalent - this is because the Simplified and Traditional characters for these words are the same. | ltr | . | False |   | False |   | 2 | 4 | 8 | 14 | prefix | left |
+| Croatian | hr | oo | oo_cy | Cyrillic | False |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Croatian | hr | oo | oo_la | Latin | True |   | ltr | . | True | Note: 'đ' can also be inputted as 'dj' | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Czech | cs | cs |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
+| Danish | da | da |   | Latin | True |   | ltr | . | True | Note: 'æ' can also be inputted as 'ae'; 'ø' can also be inputted 'oe'; 'å' can also be inputted 'aa' | False |   | 4 | 21 | 14 | 65 | prefix | left |
+| Dutch | nl | nl |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
+| English | en | en |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
+| Estonian | et | et |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Finnish | fi | fi |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 17 | 14 | 53 | prefix | left |
+| French | fr | fr |   | Latin | True |   | ltr | . | True | Handles common French homophones: plural -s variants and alternate conjugations of -er verbs; ‘œ’ may be typed as ‘oe’. | False |   | 3 | 20 | 11 | 62 | prefix | left |
+| German | de | de |   | Latin | True |   | ltr | . | True | Note: 'ä' can also be inputted as 'ae'; 'ö' can also be inputted as 'oe'; 'ü' can also be inputted as 'ue' | False |   | 3 | 19 | 11 | 59 | prefix | left |
+| Greek | el | el |   | Greek | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
+| Gujarati | gu | gu |   | Gujarati | True |   | ltr | . | False |   | False |   | 3 | 17 | 11 | 53 | prefix | left |
+| Hebrew | he | he |   | Hebrew | True |   | rtl | . | False |   | False |   | 3 | 17 | 11 | 53 | prefix | right |
+| Hindi | hi | hi |   | Devanagari | True |   | ltr | . | True | Some characters that look identical can be typed in more than one way | False |   | 2 | 17 | 8 | 53 | prefix | left |
+| Hungarian | hu | hu |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 16 | 14 | 50 | prefix | left |
+| isiXhosa | xh | xh |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| isiZulu | zu | zu |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Italian | it | it |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 19 | 14 | 59 | prefix | left |
+| Japanese | ja | ja |   | Hiragana | True |   | ltr | 。 | False |   | False |   | 2 | 8 | 8 | 26 | prefix | left |
+| Kannada | kn | kn |   | Kannada | True |   | ltr | . | False |   | False |   | 3 | 18 | 11 | 56 | prefix | left |
+| Kazakh | kk | kk | kk_cy | Cyrillic | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Kazakh | kk | kk | kk_la | Latin | False |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Khmer | km | km |   | Khmer | True |   | ltr | . | False |   | False |   | 3 | 15 | 11 | 47 | prefix | left |
+| Korean | ko | ko |   | Hangul | True |   | ltr | . | False |   | False |   | 2 | 5 | 8 | 17 | prefix | left |
+| Lao | lo | lo |   | Lao | True |   | ltr | . | True | Some characters that look identical can be typed in more than one way | False |   | 2 | 19 | 8 | 59 | prefix | left |
+| Malayalam | ml | ml |   | Malayalam | True |   | ltr | . | True | Words that were changed in spelling reform have previous spellings as secondary words | False |   | 3 | 19 | 11 | 59 | prefix | left |
+| Marathi | mr | mr |   | Devanagari | True |   | ltr | . | True | Some characters that look identical can be typed in more than one way | False |   | 2 | 18 | 8 | 56 | prefix | left |
+| Mongolian | mn | mn | mn_cy | Cyrillic | True |   | ltr | . | False |   | False |   | 4 | 17 | 14 | 53 | prefix | left |
+| Mongolian | mn | mn | mn_la | Latin | False |   | ltr | . | True | Secondary words are created when a Crillic character has more than one Latin script equivalent: 'х' can also be inputted as 'h' OR 'kh'; 'ө' can also be inputted as  'o' OR 'u' | False |   | 4 | 17 | 14 | 53 | prefix | left |
+| Montenegrin | me | oo | oo_cy | Cyrillic | False |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Montenegrin | me | oo | oo_la | Latin | True |   | ltr | . | True | Note: 'đ' can also be inputted as 'dj' | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Nepali | ne | ne |   | Devanagari | True |   | ltr | . | True | Some characters that look identical can be typed in more than one way | False |   | 2 | 18 | 8 | 56 | prefix | left |
+| Norwegian | no | no |   | Latin | True |   | ltr | . | True | Note: 'æ' can also be inputted as 'ae'; 'ø' can also be inputted 'oe'; 'å' can also be inputted 'aa' | False |   | 4 | 21 | 14 | 65 | prefix | left |
+| Odia | or | or |   | Oriya (Odia) | True |   | ltr | . | False |   | False |   | 3 | 14 | 11 | 44 | prefix | left |
+| Persian | fa | fa |   | Arabic | True |   | rtl | . | True | Some characters that look identical can be typed in more than one way | False |   | 2 | 12 | 8 | 38 | prefix | right |
+| Polish | pl | pl |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 17 | 14 | 53 | prefix | left |
+| Portuguese | pt | pt |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 19 | 14 | 59 | prefix | left |
+| Punjabi | pa | pa |   | Gurmukhi | True |   | ltr | . | True | Some characters that look identical can be typed in more than one way | False |   | 3 | 15 | 11 | 47 | prefix | left |
+| Romanian | ro | ro |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 16 | 14 | 50 | prefix | left |
+| Russian | ru | ru |   | Cyrillic | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
+| Serbian | sr | oo | oo_cy | Cyrillic | False |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Serbian | sr | oo | oo_la | Latin | True |   | ltr | . | True | Note: 'đ' can also be inputted as 'dj' | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Sinhala | si | si |   | Sinhala | True |   | ltr | . | False |   | False |   | 3 | 15 | 11 | 47 | prefix | left |
+| Slovak | sk | sk |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 14 | 14 | 44 | prefix | left |
+| Slovene | sl | sl |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Spanish | es | es |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 19 | 14 | 59 | prefix | left |
+| Swahili | sw | sw |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Swedish | sv | sv |   | Latin | True |   | ltr | . | False |   | False |   | 3 | 18 | 11 | 56 | prefix | left |
+| Tamil | ta | ta |   | Tamil | True |   | ltr | . | False |   | False |   | 3 | 18 | 11 | 56 | prefix | left |
+| Telugu | te | te |   | Telugu | True |   | ltr | . | False |   | False |   | 3 | 19 | 11 | 59 | prefix | left |
+| Thai | th | th |   | Thai | True |   | ltr | . | False |   | False |   | 3 | 15 | 11 | 47 | prefix | left |
+| Turkish | tr | tr |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 17 | 14 | 53 | prefix | left |
+| Ukrainian | uk | uk |   | Cyrillic | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
+| Urdu | ur | ur |   | Arabic | True |   | rtl | . | True | Some pairs of characters share the same sound. Secondary words allow for this | False |   | 2 | 15 | 8 | 47 | prefix | right |
+| Vietnamese | vi | vi |   | Latin | True |   | ltr | . | True | Primary words have spaces; secondary words are written with no spaces | True | Vietnamese orthography allows up to three internal spaces inside a single dictionary word (e.g. ‘thành phố’). In a valid Vietnamese 3-word address this rule is all-or-nothing: if one word contains internal spaces, then all three words do. | 4 | 18 | 14 | 56 | prefix | left |
+| Welsh | cy | cy |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 16 | 14 | 50 | prefix | left |
+
+
+## GUIDELINES & SUPPORT
+
+Resources for implementation best practices and support.
+
+- [UX guidelines](https://developer.what3words.com/ux-guidelines) – Best practices for user experience when implementing what3words
+- [FAQs](https://developer.what3words.com/support) – Frequently asked questions about what3words implementation
+
+## TUTORIALS
+
+Complete list of implementation tutorials.
+
+- [Overview](https://developer.what3words.com/tutorial/list) – Browse all available what3words implementation tutorials
+
+## QUICK LINKS & RESOURCES
+
+Essential resources for what3words developers.
+
+- [Developer site - Tutorials](https://developer.what3words.com/tutorial/list) – Complete list of implementation tutorials
+- [Developer site - Public API](https://developer.what3words.com/public-api) – Public API documentation and resources
+- [Developer site - Enterprise Suite](https://developer.what3words.com/enterprise-suite) – Enterprise-level integration solutions
+- [Plan Pricing](https://accounts.what3words.com/select-plan) – API pricing and subscription plans
+- [Help & Support](mailto:support@swiftcomplete.com) – Contact the support team for assistance
+- [OpenAPI Spec](https://openapi.what3words.com/openapi/openapi.yaml) – OpenAPI specification for what3words API
+- [Postman collection](https://openapi.what3words.com/what3words.postman_collection.json) – Ready-to-use Postman collection for API testing
+
+## Additional Tutorials
+
+Additional resources organized by implementation type.
+
+### UI Components
+
+Additional UI component implementations.
+
+- [JavaScript SDK](https://developer.what3words.com/tutorial/javascript-sdk/) – Integrate what3words into web apps using the JavaScript SDK and web components
+- [Creating an AutoSuggest input box (v3.1, deprecated)](https://developer.what3words.com/tutorial/creating-an-autosuggest-input-box-with-what3words-js-v3-1-deprecated/) – **Deprecated:** Add a what3words AutoSuggest address input to a webpage in just a few lines of code
+
+### Mobile Integration
+
+Additional mobile integration options.
+
+- [Mobile linking to the what3words app](https://developer.what3words.com/tutorial/mobile-linking-to-the-what3words-app/) – Use URL schemes/intents to open the what3words mobile app at a specific 3 word address
+
+### Server-Side Solutions
+
+Backend implementation guides.
+
+- [Hiding your API Key (Proxy Setup)](https://developer.what3words.com/tutorial/hiding-your-api-key/) – Proxy API calls through your server to avoid exposing your what3words API key in client-side code
+
+### Website Integration
+
+Additional website integration options.
+
+- [Import and Plot 3 word addresses on the Map Site (CSV)](https://developer.what3words.com/tutorial/import-and-plot-what3words-addresses-on-the-map-site-using-a-csv-file/) – Upload a CSV of what3words addresses to the what3words Map Site, plot them on the map, and sync to the mobile app
+
+### Enterprise & Platform Integrations
+
+Integrations with enterprise platforms.
+
+- [Procore integration](https://developer.what3words.com/tutorial/how-to-add-the-what3words-to-procore/) – Add what3words functionality to the Procore construction management platform
+- [Yext integration](https://developer.what3words.com/tutorial/installing-the-what3words-yext-integration/) – Add what3words address search to Yext (marketing/locations platform)
+- [Salesforce integration](https://developer.what3words.com/tutorial/add-what3words-to-salesforce/) – Add what3words API capabilities to Salesforce (e.g. in forms or workflows)
+
+### Industry Use Case Guides
+
+Implementation guides for specific industries.
+
+- [Logistics – How to add what3words for logistics](https://developer.what3words.com/tutorial/logistics/) – Step-by-step guide to integrate what3words into a logistics/delivery system
+- [Navigation – How to add what3words to a navigation app](https://developer.what3words.com/tutorial/navigation/) – Guide to integrate what3words into a navigation or maps application
+
+<!-- 
+Schema.org metadata for improved search engine understanding
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "what3words Developer Documentation and API Reference - Full Guide",
+  "description": "Comprehensive guide to integrating what3words location technology including detailed API references, SDKs, components, implementation tutorials, case studies, troubleshooting, best practices, and data schemas.",
+  "keywords": "what3words, 3 word address, location API, geocoding, address system, developer tools, mapping integration, SDK, autosuggest, API reference, API examples, word list schema, API best practices, troubleshooting",
+  "author": {
+    "@type": "Organization",
+    "name": "what3words"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "what3words",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://developer.what3words.com/assets/images/w3w-logo.png"
+    }
+  },
+  "datePublished": "2025-05-27",
+  "dateModified": "2025-05-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://developer.what3words.com/documentation-full"
+  }
+}
+</script>
+
+
+## TROUBLESHOOTING GUIDE
+
+This section provides solutions to common issues encountered when implementing what3words technology.
+
+### API Integration Issues
+
+#### Problem: API Key Authentication Failures
+
+**Symptoms:**
+- Receiving `InvalidKey` error responses
+- HTTP 401 Unauthorized responses
+- API calls failing with authentication errors
+
+**Possible Causes:**
+1. Invalid or expired API key
+2. API key not properly included in requests
+3. API key used in incorrect environment (e.g., development key in production)
+4. API key lacks permissions for specific endpoints
+
+**Solutions:**
+1. Verify your API key is valid in the [what3words Developer Dashboard](https://accounts.what3words.com/create-api-key)
+2. Ensure the key is correctly included either as a query parameter (`key=YOUR_API_KEY`) or in the HTTP header (`X-Api-Key: YOUR_API_KEY`)
+3. Check that you're using the correct key for your environment
+4. For specialized endpoints like `/autosuggest-with-coordinates`, confirm your key has the necessary permissions
+
+```javascript
+// Example of correct API key usage
+// As query parameter:
+fetch("https://api.what3words.com/v3/convert-to-coordinates?words=filled.count.soap&key=YOUR_API_KEY")
+
+// As HTTP header:
+fetch("https://api.what3words.com/v3/convert-to-coordinates?words=filled.count.soap", {
+  headers: {
+    "X-Api-Key": "YOUR_API_KEY"
+  }
+})
+```
+
+#### Problem: Rate Limiting and Quota Exceeded
+
+**Symptoms:**
+- HTTP 429 (Too Many Requests) responses
+- Error messages about exceeding rate limits
+- Intermittent API failures during high traffic periods
+
+**Possible Causes:**
+1. Exceeding requests-per-second limit
+2. Exceeding monthly quota
+3. Inefficient implementation causing excessive API calls
+
+**Solutions:**
+1. Implement request throttling or debouncing, especially for AutoSuggest
+2. Add exponential backoff retry logic for failed requests
+3. Cache frequently requested data (e.g., language lists, common conversions)
+4. Monitor your API usage in the Developer Dashboard
+5. Consider upgrading your API plan if consistently hitting limits
+
+### Component Integration Issues
+
+#### Problem: AutoSuggest Component Not Displaying Suggestions
+
+**Symptoms:**
+- No dropdown appears when typing
+- Console errors related to the component
+- Component renders but doesn't respond to input
+
+**Possible Causes:**
+1. API key issues
+2. Input doesn't meet minimum requirements (two words plus start of third)
+3. CSS conflicts hiding the dropdown
+4. JavaScript errors preventing component initialization
+
+**Solutions:**
+1. Check browser console for specific error messages
+2. Ensure input contains at least two complete words and the start of a third
+3. Inspect the DOM to verify the dropdown elements are being created
+4. Test with minimal CSS to identify potential style conflicts
+5. Verify the component is properly initialized with a valid API key
+
+#### Problem: Mobile SDK Integration Issues
+
+**Symptoms:**
+- Build errors when integrating the SDK
+- Runtime crashes when using SDK methods
+- SDK methods return unexpected results
+
+**Possible Causes:**
+1. Incompatible SDK version with app environment
+2. Missing dependencies
+3. Improper initialization
+4. Permission issues (e.g., for location access)
+
+**Solutions:**
+1. Verify you're using the latest SDK version compatible with your app
+2. Check that all required dependencies are properly included
+3. Ensure the SDK is initialized with a valid API key before use
+4. For Android, check the manifest for necessary permissions
+5. For iOS, verify Info.plist contains required permission descriptions
+
+### Common Error Codes and Solutions
+
+| Error Code | Description | Solution |
+|------------|-------------|----------|
+| `BadWords` | Invalid what3words address format | Verify the address follows the pattern of three words separated by the correct delimiter (usually ".") |
+| `BadCoordinates` | Invalid coordinates format | Ensure coordinates are provided as "latitude,longitude" with valid numerical values |
+| `MissingWords` | The `words` parameter is missing | Check that your request includes the required `words` parameter |
+| `MissingInput` | The `input` parameter is missing for AutoSuggest | Ensure your AutoSuggest requests include the `input` parameter |
+| `BadLanguage` | Invalid language code | Verify you're using a supported language code from the `/available-languages` endpoint |
+| `BadBoundingBoxTooBig` | Bounding box exceeds size limit | Reduce the size of your bounding box to be under 4km diagonally |
+| `InvalidKeyNoPermissions` | API key lacks permissions | Contact what3words support to request additional permissions for your API key |
+
+### Debugging Tips
+
+1. **Enable Verbose Logging:**
+   - For JavaScript: Set `debug: true` in component options
+   - For Android: Use `setLogging(true)` on the SDK instance
+   - For iOS: Set `What3Words.shared.loggingEnabled = true`
+
+2. **Test with Playground:**
+   - Use the [API Playground](https://developer.what3words.com/public-api/playground) to test API calls directly
+   - Compare your implementation's requests with working playground examples
+
+3. **Check Network Requests:**
+   - Use browser developer tools (Network tab) to inspect API requests and responses
+   - Verify request parameters and headers are correctly formatted
+
+4. **Validate Inputs:**
+   - For 3 word addresses: Must be three words separated by the correct delimiter
+   - For coordinates: Must be valid latitude (-90 to 90) and longitude (-180 to 180)
+
+5. **Test with Known Valid Values:**
+   - Use "filled.count.soap" as a test 3 word address
+   - Use "51.521251,-0.203586" as test coordinates
+
+## FREQUENTLY ASKED QUESTIONS
+
+### General Questions
+
+#### What is a what3words address?
+A what3words address is a unique combination of three words that identifies a precise 3m x 3m square anywhere on Earth. For example, "filled.count.soap" refers to a specific 3m square in London. The what3words system has divided the world into 57 trillion squares, each with a unique 3 word address.
+
+#### How accurate is a what3words address?
+A what3words address refers to a precise 3m x 3m square. This level of accuracy is sufficient for most use cases, including deliveries, meeting points, and emergency services.
+
+#### Are what3words addresses available in multiple languages?
+Yes, what3words addresses are available in over 50 languages. Each 3m square has a different 3 word address in each language, but they all refer to the same physical location.
+
+#### How do I get a what3words API key?
+You can register for a free API key at the [what3words Developer Dashboard](https://accounts.what3words.com/create-api-key). Different pricing tiers are available based on usage requirements.
+
+### API Questions
+
+#### What's the difference between the Public API and Enterprise Suite?
+The Public API requires an internet connection and is suitable for most online applications. The Enterprise Suite includes offline capabilities, self-hosted options, and additional features for enterprise-level integrations.
+
+#### Can I use the what3words API offline?
+The standard Public API requires an internet connection. For offline capabilities, you need the Enterprise Suite, which includes SDKs with offline functionality. Contact what3words for Enterprise Suite access.
+
+#### How many API calls can I make?
+API usage limits depend on your pricing plan. Free plans typically have lower limits than paid plans. You can view your current limits and usage in the Developer Dashboard.
+
+#### How should I handle API rate limiting?
+Implement debouncing for user input, add exponential backoff for retries, and cache frequently requested data. Consider upgrading your plan if you consistently hit limits.
+
+#### Can I convert multiple addresses in a single API call?
+The standard API endpoints process one address at a time. For batch processing, you may need to implement your own solution by making multiple API calls, or contact what3words about enterprise options.
+
+### Implementation Questions
+
+#### How do I integrate what3words with my existing address form?
+You can add a what3words field alongside traditional address fields using the AutoSuggest component. Store both the traditional address and the 3 word address in your database.
+
+#### Can I display the what3words grid on my own map?
+Yes, you can use the `/grid-section` API endpoint to get grid lines for a specific area, then render these lines on your map using your preferred mapping library.
+
+#### How do I validate a what3words address without calling the API?
+You can check if a string matches the pattern of a what3words address (three words separated by the correct delimiter) using regular expressions, but this only validates the format—not whether the address actually exists. For more robust validation, refer to the [regex tutorial](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-what3words-address-using-regex/).
+
+If you are using an official what3words API library, you can use helper functions such as `isPossible3wa` (checks format) and `isValid3wa` (checks if the address exists via API). 
+
+#### How do I handle voice input for what3words addresses?
+Use the AutoSuggest API with `input-type` set to "generic-voice" or one of the specialized voice input types. Always set the `language` parameter when using voice input to improve recognition accuracy.
+
+#### Can I use what3words in my mobile app?
+Yes, what3words provides SDKs for iOS (Swift/Objective-C) and Android. These SDKs include components for AutoSuggest, map display, and more.
+
+### Troubleshooting Questions
+
+#### Why isn't my AutoSuggest component showing suggestions?
+Ensure you've entered at least two complete words and started typing the third word. Check your API key, network connectivity, and browser console for errors.
+
+#### Why am I getting "InvalidKey" errors?
+Verify your API key is valid and correctly included in requests. Check that you're using the right key for your environment and that it has the necessary permissions.
+
+#### How do I handle different languages and scripts?
+Use the `language` parameter to specify the desired language for API responses. For languages with multiple scripts, use the appropriate `locale` parameter as specified in the Word List Schema.
+
+#### What should I do if I exceed my API rate limits?
+Implement request throttling, add caching for common requests, and consider upgrading your API plan if needed.
+
+#### How do I report issues or get support?
+For technical support, contact [support@what3words.com](mailto:support@what3words.com). For API-specific questions, you can also reach out to [support@swiftcomplete.com](mailto:support@swiftcomplete.com).
+
+
+## PERFORMANCE OPTIMIZATION
+
+This section provides strategies and best practices for optimizing the performance of your what3words integration.
+
+## VERSIONING INFORMATION
+
+This section provides guidance on what3words API versioning, migration strategies, and best practices for maintaining compatibility.
+
+### API Version History
+
+#### Current Version: V3
+
+The current stable version of the what3words API is **V3**, which was released in 2019. This version introduced several improvements over V2, including:
+
+- Enhanced error handling with structured error responses
+- Improved AutoSuggest capabilities
+- Additional language support
+- Better performance and reliability
+
+#### Legacy Version: V2 (Deprecated)
+
+V2 of the API is deprecated and should not be used for new integrations. Support for V2 may be discontinued in the future.
+
+#### Version Compatibility
+
+The what3words API follows semantic versioning principles:
+- **Major versions** (e.g., V2 to V3): Introduce breaking changes that require code modifications
+- **Minor versions**: Add new features in a backward-compatible manner
+- **Patch versions**: Implement bug fixes and minor improvements without breaking changes
+
+### Migration Strategies
+
+#### Migrating from V2 to V3
+
+If you're still using the V2 API, follow these steps to migrate to V3:
+
+1. **Update Endpoint URLs**
+
+   Change all API endpoint URLs from `https://api.what3words.com/v2/` to `https://api.what3words.com/v3/`:
+
+   ```javascript
+   // V2 (old)
+   const apiUrl = 'https://api.what3words.com/v2/forward';
+   
+   // V3 (new)
+   const apiUrl = 'https://api.what3words.com/v3/convert-to-coordinates';
+   ```
+
+2. **Update Endpoint Names**
+
+   Several endpoint names have changed in V3:
+
+   | V2 Endpoint | V3 Endpoint |
+   |-------------|-------------|
+   | `/forward` | `/convert-to-coordinates` |
+   | `/reverse` | `/convert-to-3wa` |
+   | `/standardblend` | `/autosuggest` |
+   | `/standardblend-with-coordinates` | `/autosuggest-with-coordinates` |
+   | `/grid` | `/grid-section` |
+   | `/languages` | `/available-languages` |
+
+3. **Update Request Parameters**
+
+   Some parameter names have changed:
+
+   | V2 Parameter | V3 Parameter | Endpoint |
+   |--------------|--------------|----------|
+   | `addr` | `words` | `/convert-to-coordinates` |
+   | `display` | `format` | All endpoints |
+   | `lang` | `language` | Multiple endpoints |
+
+4. **Handle Structured Error Responses**
+
+   V3 returns structured error objects:
+
+   ```javascript
+   // V2 error handling (old)
+   if (response.status !== 200) {
+     console.error('API error:', response.statusText);
+   }
+   
+   // V3 error handling (new)
+   if (response.error) {
+     console.error(`API error: ${response.error.code} - ${response.error.message}`);
+   }
+   ```
+
+5. **Update Response Parsing**
+
+   Some response fields have changed:
+
+   ```javascript
+   // V2 response parsing (old)
+   const { position, words } = response;
+   const { lat, lng } = position;
+   
+   // V3 response parsing (new)
+   const { coordinates, words } = response;
+   const { lat, lng } = coordinates;
+   ```
+
+For a complete migration guide, refer to the [Migrating an application from API V2 to API V3](https://developer.what3words.com/tutorial/migrating-an-application-from-api-v2-to-api-v3/) tutorial.
+
+### SDK Version Management
+
+#### Mobile SDK Versioning
+
+The what3words mobile SDKs follow their own versioning scheme:
+
+1. **Android SDK**
+   - Current version: 4.x (check [GitHub](https://github.com/what3words/w3w-android-wrapper) for latest)
+   - Major version updates may include breaking changes
+   - Migration guide: [Migrating Android API Wrapper from 3.x to 4.x](https://developer.what3words.com/tutorial/migrating-android-api-wrapper-from-version-3x-to-4x/)
+
+2. **iOS SDK**
+   - Current version: Check [GitHub](https://github.com/what3words/w3w-swift-wrapper) for latest
+   - Uses semantic versioning (MAJOR.MINOR.PATCH)
+
+#### JavaScript Components Versioning
+
+The what3words JavaScript components also follow semantic versioning:
+
+1. **AutoSuggest Component**
+   - Current version: 5.x
+   - Previous version: 3.1 (deprecated)
+   - Migration guide: [Using the JavaScript AutoSuggest Component (v5)](https://developer.what3words.com/tutorial/using-the-javascript-autosuggest-component-v5/)
+
+### Version Compatibility Best Practices
+
+1. **Specify Version in Dependencies**
+
+   Always specify the exact version or version range in your package dependencies:
+
+   ```json
+   // package.json example
+   {
+     "dependencies": {
+       "what3words": "^3.1.0"
+     }
+   }
+   ```
+
+   ```gradle
+   // build.gradle example (Android)
+   dependencies {
+       implementation 'com.what3words:w3w-android-wrapper:4.1.1'
+   }
+   ```
+
+   ```ruby
+   # Podfile example (iOS)
+   pod 'what3words', '~> 3.0'
+   ```
+
+2. **Monitor for Updates**
+
+   Regularly check for SDK and API updates:
+
+   ```bash
+   # NPM example
+   npm outdated
+   
+   # CocoaPods example
+   pod outdated
+   
+   # Gradle example
+   ./gradlew dependencyUpdates
+   ```
+
+3. **Test Before Upgrading**
+
+   Always test your integration thoroughly when upgrading to a new version:
+
+   ```javascript
+   // Example test for basic functionality after upgrade
+   async function testBasicFunctionality() {
+     console.log('Testing basic functionality after upgrade...');
+     
+     try {
+       // Test convert-to-coordinates
+       const coordsResponse = await fetch(`https://api.what3words.com/v3/convert-to-coordinates?words=filled.count.soap&key=${apiKey}`);
+       const coordsData = await coordsResponse.json();
+       
+       if (!coordsData.coordinates) {
+         throw new Error('Failed to convert words to coordinates');
+       }
+       
+       console.log('✓ convert-to-coordinates working');
+       
+       // Test convert-to-3wa
+       const w3wResponse = await fetch(`https://api.what3words.com/v3/convert-to-3wa?coordinates=${coordsData.coordinates.lat},${coordsData.coordinates.lng}&key=${apiKey}`);
+       const w3wData = await w3wResponse.json();
+       
+       if (!w3wData.words) {
+         throw new Error('Failed to convert coordinates to words');
+       }
+       
+       console.log('✓ convert-to-3wa working');
+       
+       // Test autosuggest
+       const suggestResponse = await fetch(`https://api.what3words.com/v3/autosuggest?input=filled.count.s&key=${apiKey}`);
+       const suggestData = await suggestResponse.json();
+       
+       if (!suggestData.suggestions || suggestData.suggestions.length === 0) {
+         throw new Error('Failed to get autosuggest results');
+       }
+       
+       console.log('✓ autosuggest working');
+       
+       console.log('All tests passed!');
+     } catch (error) {
+       console.error('Test failed:', error);
+     }
+   }
+   ```
+
+4. **Implement Feature Detection**
+
+   Use feature detection to handle different API versions:
+
+   ```javascript
+   // Example of feature detection for SDK capabilities
+   function initializeW3W() {
+     const w3w = new What3Words(apiKey);
+     
+     // Check if offline mode is available (Enterprise Suite feature)
+     const hasOfflineCapability = typeof w3w.isOfflineDataAvailable === 'function';
+     
+     if (hasOfflineCapability) {
+       console.log('Offline capability detected, initializing offline mode');
+       w3w.enableOfflineMode();
+     } else {
+       console.log('Offline capability not available, using online mode only');
+     }
+     
+     return w3w;
+   }
+   ```
+
+## LOCALIZATION GUIDELINES
+
+This section provides guidance on implementing what3words in multiple languages and ensuring proper internationalization.
+
+### Language Support Overview
+
+what3words currently supports over 50 languages, with each 3m square having a unique 3 word address in each supported language. The complete list of supported languages can be retrieved using the `/available-languages` API endpoint.
+
+### Language-Specific Resources
+
+For detailed information about each supported language, refer to the Word List Schema section, which includes:
+
+- Language codes for API requests
+- Available scripts and locales
+- Text direction
+- Default delimiters
+- Secondary word support
+- Internal space rules
+- Word length constraints
+
+This information is essential for properly handling the unique characteristics of each language in your what3words implementation.
+
+
+## GLOSSARY OF TERMS
+
+This glossary defines key terms used throughout the what3words developer documentation.
+
+- **3 word address:** A unique combination of three words that identifies a 3m x 3m square anywhere in the world. Example: `filled.count.soap`.
+- **API (Application Programming Interface):** A set of rules and protocols that allows different software applications to communicate with each other. The what3words API allows developers to integrate what3words functionality into their own applications.
+- **API Key:** A unique code used to authenticate requests to the what3words API. It identifies the application making the request and is used for usage tracking and billing.
+- **AutoSuggest:** A feature (and API endpoint `/autosuggest`) that provides suggestions for valid 3 word addresses as a user types, correcting misspellings and offering likely matches.
+- **Bounding Box:** A rectangular area defined by its southwest and northeast corner coordinates (latitude, longitude). Used in API calls like `/autosuggest` and `/grid-section` to limit results to a specific geographic area.
+- **CAD (Computer-Aided Dispatch):** A system used by emergency services and other dispatch organizations to manage calls, resources, and response efforts.
+- **Clipping:** Restricting API results (e.g., AutoSuggest) to a specific geographic area, such as a country, bounding box, circle, or polygon.
+- **Coordinates:** A pair of numbers (latitude and longitude) that specify a precise location on the Earth's surface.
+- **CORS (Cross-Origin Resource Sharing):** A security mechanism that allows web pages to request resources from a different domain than the one that served the page. Necessary for frontend JavaScript applications calling APIs directly.
+- **Debouncing:** A programming practice used to limit the rate at which a function is called, often used with user input events (like typing) to prevent excessive API calls.
+- **Delimiter:** The character used to separate the three words in a what3words address. The standard delimiter is a period (`.`), but some languages use different characters (e.g., Japanese uses `。`).
+- **Endpoint:** A specific URL within an API that performs a particular function. Examples: `/convert-to-coordinates`, `/autosuggest`.
+- **Enterprise Suite:** An advanced set of what3words products and services designed for large-scale or specialized integrations, often including offline capabilities and self-hosted options.
+- **Focus:** A coordinate point used in the `/autosuggest` API to bias results towards a specific location, ranking suggestions closer to the focus point higher.
+- **Geocoding:** The process of converting a description of a location (like a street address or a 3 word address) into geographic coordinates (latitude and longitude).
+- **GeoJSON:** A standard format for encoding geographic data structures using JSON. Supported as an output format by several what3words API endpoints.
+- **Grid:** The global grid of 3m x 3m squares created by what3words.
+- **Grid Section:** The lines representing the what3words grid within a specific bounding box, retrievable via the `/grid-section` API endpoint.
+- **HTTPS (Hypertext Transfer Protocol Secure):** The secure version of HTTP, which encrypts communication between a client and a server.
+- **ISO 639-1:** A standardized nomenclature used to classify languages, represented by two-letter codes (e.g., `en` for English, `fr` for French).
+- **JSON (JavaScript Object Notation):** A lightweight data-interchange format commonly used for API responses.
+- **JSON-LD (JSON for Linking Data):** A method of encoding Linked Data using JSON. Used for adding structured data (Schema.org) to web pages.
+- **l10n (Localization):** The process of adapting internationalized software for a specific region or language by translating text and adding locale-specific components.
+- **Latitude:** The angular distance of a place north or south of the Earth's equator, measured in degrees.
+- **Locale:** A specific variant of a language, often related to a particular region or writing script (e.g., `zh_Hans` for Simplified Chinese, `zh_Hant` for Traditional Chinese). In what3words, used to specify script variants (e.g., `oo_cy` for Cyrillic Serbian/Bosnian/etc.).
+- **Longitude:** The angular distance of a place east or west of the Greenwich meridian, measured in degrees.
+- **LTR (Left-to-Right):** The direction of text flow used in most Western languages.
+- **OCR (Optical Character Recognition):** Technology used to recognize text within images. what3words provides OCR components for scanning 3 word addresses.
+- **OpenAPI Specification:** A standard format for describing RESTful APIs, allowing both humans and computers to understand the capabilities of a service without access to source code or documentation. what3words provides an OpenAPI spec for its API.
+- **Rate Limiting:** A mechanism used by APIs to control the number of requests a client can make within a specific time period.
+- **REST (Representational State Transfer):** An architectural style for designing networked applications, commonly used for web APIs.
+- **Reverse Geocoding:** The process of converting geographic coordinates (latitude and longitude) into a description of a location (like a street address or a 3 word address). The `/convert-to-3wa` endpoint performs reverse geocoding to a 3 word address.
+- **RTL (Right-to-Left):** The direction of text flow used in languages like Arabic and Hebrew.
+- **Schema.org:** A collaborative project creating schemas for structured data markup on web pages, helping search engines understand the content.
+- **SDK (Software Development Kit):** A collection of tools, libraries, documentation, and code samples that enable developers to build applications for a specific platform or service. what3words provides SDKs for various platforms (iOS, Android, Java, etc.).
+- **Secondary Words:** Alternative input forms for words in certain languages accepted by the API (e.g., handling missing diacritics, homophones, or spacing variations).
+- **Semantic Versioning (SemVer):** A versioning scheme for software (MAJOR.MINOR.PATCH) that conveys meaning about the underlying changes.
+- **Swiftcomplete:** A partner service providing postal address validation and autocomplete functionality, often integrated alongside what3words.
+- **Throttling:** A technique to control the rate at which a process or function is executed, often used to manage API call frequency.
+- **TTL (Time-To-Live):** A value in data caching that specifies how long a piece of information should be considered valid before being refreshed.
+- **UX (User Experience):** The overall experience a user has when interacting with a product or service, particularly in terms of ease of use and satisfaction.
+- **YAML (YAML Ain't Markup Language):** A human-readable data serialization standard, often used for configuration files and in formats like OpenAPI.
+
+## INTERACTIVE EXAMPLES & PLAYGROUND
+
+Explore and test what3words functionality interactively:
+
+- **API Playground:** The official [what3words API Playground](https://developer.what3words.com/public-api/playground) allows you to test all public API endpoints directly in your browser. Experiment with different parameters and see live results.
+- **CodePen / JSFiddle:** 
+- **GitHub Repositories:** Explore the official [what3words GitHub repositories](https://github.com/what3words) for:
+    - **API Wrappers:** Find source code and usage examples for wrappers in various languages (Python, Java, Swift, JavaScript, etc.).
+    - **Mobile SDKs:** Access the source code and sample applications for the [Android](https://github.com/what3words/w3w-android-samples) and [iOS](https://github.com/what3words/w3w-swift-samples) SDKs.
+    - **Components:** View the source code for JavaScript components like AutoSuggest at [what3words-web](https://github.com/what3words/what3words-web/tree/main/apps/examples/components).
+- **Postman Collection:** Download the [what3words Postman Collection](https://openapi.what3words.com/what3words.postman_collection.json) to easily test API endpoints using the Postman application.
+
+These resources provide hands-on ways to understand how the API and components work before integrating them into your own projects.

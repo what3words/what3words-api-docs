@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://openapi.what3words.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- OpenAPI YAML -->
+  <url>
+    <loc>https://openapi.what3words.com/openapi/openapi.yaml</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Swagger UI or Redoc viewer -->
+  <url>
+    <loc>https://openapi.what3words.com/openapi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- LLM Metadata -->
+  <url>
+    <loc>https://openapi.what3words.com/llms.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://openapi.what3words.com/llms-full.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <!-- API Reference -->
+    <url>
+      <loc>https://developer.what3words.com/public-api/docs</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <!-- Postman Collection -->
+    <url>
+        <loc>https://openapi.what3words.com/what3words.postman_collection.json</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>    
+    </url>
+ 
+</urlset>
