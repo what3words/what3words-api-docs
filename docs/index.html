@@ -6,41 +6,177 @@
     <title>what3words API Documentation | OpenAPI, Postman, LLMS Metadata</title>
     <meta name="description" content="Official API documentation for what3words. Download OpenAPI specs, Postman collections, and LLM-friendly metadata (llms.txt). Ideal for developers, AI tools, and technical integrations.">
     <meta name="keywords" content="what3words, address API, OpenAPI, Postman, llms.txt, API documentation, AI-ready APIs, API developer hub, location API, what3words autocomplete, geocoding API, what3words integrations">
-    <style>
-        body { font-family: sans-serif; padding: 2rem; line-height: 1.6; background-color: #fff; color: #1e293b; }
-        h1 { color: #0f172a; font-size: 2rem; }
-        h2 { margin-top: 2rem; color: #334155; }
-        ul { padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        a { color: #0ea5e9; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .note { font-size: 0.9rem; color: #64748b; margin-top: 1rem; }
-    </style>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.what3words.com/">
+    <meta property="og:title" content="what3words API Documentation">
+    <meta property="og:description" content="Official API documentation for what3words. Download OpenAPI specs, Postman collections, and LLM-friendly metadata.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.what3words.com/">
+    <meta property="twitter:title" content="what3words API Documentation">
+    <meta property="twitter:description" content="Official API documentation for what3words. Download OpenAPI specs, Postman collections, and LLM-friendly metadata.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>what3words API Documentation</h1>
-    <p>Welcome to <strong>docs.what3words.com</strong> — your central resource for integrating what3words' location APIs across web, mobile, and ecommerce platforms.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="assets/w3w_logo.png" alt="what3words" class="logo">
+                    <div class="logo-text">
+                        <h1 style="padding-top: 15%;">what3words</h1>
+                        <span class="subtitle">API Documentation</span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="https://developer.what3words.com" target="_blank" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        Developer Hub
+                    </a>
+                    <a href="https://github.com/what3words" target="_blank" class="nav-link">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <h2>🔌 API Specifications & Metadata</h2>
-    <ul>
-        <li><a href="/docs/openapi/">OpenAPI Documentation</a></li>
-        <li><a href="/docs/openapi/openapi.json">OpenAPI Spec (JSON)</a></li>
-        <li><a href="/docs/openapi/openapi.yaml">OpenAPI Spec (YAML)</a></li>
-        <li><a href="/docs/llms.txt">LLMS Metadata (llms.txt)</a></li>
-        <li><a href="/docs/llms-full.txt">Full LLMS Metadata (llms-full.txt)</a></li>
-    </ul>
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">API Documentation Hub</h2>
+                    <p class="hero-description">
+                        Your central resource for integrating what3words' location APIs across web, mobile, and ecommerce platforms. 
+                        Access comprehensive documentation, specifications, and tools to build precise location experiences.
+                    </p>
+                </div>
+            </section>
 
-    <h2>📦 Postman Collections</h2>
-    <ul>
-        <li><a href="/docs/what3words.postman_collection.json" download>Download Postman Collection (JSON)</a></li>
-    </ul>
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- API Specifications -->
+                <section class="card specifications-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>API Specifications & Metadata</h3>
+                        <p>Complete technical specifications and machine-readable metadata for seamless integration.</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="link-grid">
+                            <a href="/docs/openapi/" class="resource-link">
+                                <i class="fas fa-book"></i>
+                                <span>OpenAPI Documentation</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="/docs/openapi/openapi.json" class="resource-link" download="what3words_openapi.json">
+                                <i class="fas fa-file-code"></i>
+                                <span>OpenAPI Spec (JSON)</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <a href="/docs/openapi/openapi.yaml" class="resource-link" download="what3words_openapi.yaml">
+                                <i class="fas fa-file-code"></i>
+                                <span>OpenAPI Spec (YAML)</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <a href="/docs/llms.txt" class="resource-link">
+                                <i class="fas fa-robot"></i>
+                                <span>LLMS Metadata</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="/docs/llms-full.txt" class="resource-link">
+                                <i class="fas fa-robot"></i>
+                                <span>Full LLMS Metadata</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-    <h2>🧭 Related Resources</h2>
-    <ul>
-        <li><a href="https://developer.what3words.com" target="_blank">what3words Developer Website</a></li>
-        <li><a href="https://github.com/what3words" target="_blank">what3words GitHub Repositories</a></li>
-    </ul>
+                <!-- Postman Collection -->
+                <section class="card postman-card">
+                    <div class="card-header">
+                        <div class="card-icon postman-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Postman Collections</h3>
+                        <p>Ready-to-use Postman collections for quick API testing and exploration.</p>
+                    </div>
+                    <div class="card-content">
+                        <a href="/docs/what3words.postman_collection.json" download class="download-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Download Postman Collection</span>
+                        </a>
+                        <p class="download-note">
+                            <i class="fas fa-info-circle"></i>
+                            Import this collection into Postman to start testing our APIs immediately.
+                        </p>
+                    </div>
+                </section>
 
-    <p class="note">This site is optimized for AI and LLM discovery. Metadata files like <code>llms.txt</code> help tools like ChatGPT and GitHub Copilot provide smart API onboarding and autocompletion.</p>
+
+
+                <!-- Resources -->
+                <section class="card resources-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <h3>Developer Resources</h3>
+                        <p>Additional tools, guides, and community resources to support your development.</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="resource-grid">
+                            <a href="https://developer.what3words.com/public-api" target="_blank" class="resource-card get-api-key">
+                                <i class="fas fa-key"></i>
+                                <h4>Get API Key</h4>
+                                <p>Sign up for a free API key to start building with what3words</p>
+                            </a>
+                            <a href="https://github.com/what3words" target="_blank" class="resource-card">
+                                <i class="fab fa-github"></i>
+                                <h4>GitHub Repositories</h4>
+                                <p>Open source SDKs, code samples, and tools</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- AI Optimization Notice -->
+            <section class="ai-notice">
+                <div class="ai-notice-content">
+                    <i class="fas fa-brain"></i>
+                    <div class="ai-notice-text">
+                        <h4>AI & LLM Optimized</h4>
+                        <p>This site is optimized for AI and LLM discovery. Metadata files like <code>llms.txt</code> help tools like ChatGPT and GitHub Copilot provide smart API onboarding and autocompletion.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
 </body>
 </html>
