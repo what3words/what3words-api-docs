@@ -98,23 +98,33 @@ Implement address autocomplete functionality across platforms.
 Add address autocomplete to e-commerce platforms.
 
 - [Swiftcomplete Address Autocomplete - Shopify](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-shopify) – Implement address autocomplete in Shopify stores
-- [Swiftcomplete Address Autocomplete - WooCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-woocommerce) – Implement address autocomplete in WooCommerce stores
-- [Swiftcomplete Address Autocomplete - BigCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-bigcommerce) – Implement address autocomplete in BigCommerce stores
-- [Adding Swiftcomplete Address Autocomplete to E-commerce Checkout](https://developer.what3words.com/tutorial/adding-swiftcomplete-address-autocomplete-to-ecommerce-checkout/) – General guide for adding address autocomplete to e-commerce platforms
+  _Not yet live on developer.what3words.com.
+- [Swiftcomplete Address Autocomplete - WooCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-woocommerce) – Implement address autocomplete in WooCommerce stores  
+  _Not yet live on developer.what3words.com. See [current documentation](https://swiftcomplete.notion.site/WooCommerce-plugin-for-Swiftcomplete-1a466db17f3b8018bc4ce65f85f6c852)_
+- [Swiftcomplete Address Autocomplete - BigCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-bigcommerce) – Implement address autocomplete in BigCommerce stores  
+  _Not yet live on developer.what3words.com. See [current documentation](https://swiftcomplete.notion.site/BigCommerce-Integration-for-Swiftcomplete-1d666db17f3b80e9bfceef1d64bea34d)_
+- [Adding Swiftcomplete Address Autocomplete to E-commerce Checkout](https://developer.what3words.com/tutorial/adding-swiftcomplete-address-autocomplete-to-ecommerce-checkout/) – General guide for adding address autocomplete to e-commerce platforms  
+  _Not yet live on developer.what3words.com. See [current documentation](https://swiftcomplete.notion.site/Swiftcomplete-Integration-Docs-1a466db17f3b80a18a63dced29d4cfb5)_
+- [Swiftcomplete Address Autocomplete - Ecwid](#) – Implement address autocomplete in Ecwid stores  
+  _Not yet live on developer.what3words.com. See [current documentation](https://swiftcomplete.notion.site/Ecwid-Integration-for-Swiftcomplete-1f466db17f3b800a95ffef566d22b0f4)_
 
 #### Web and Mobile Components
 
 Implement address autocomplete in custom applications.
 
-- [Swiftcomplete Address Autocomplete - JavaScript Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-javascript-component) – Add address autocomplete to websites and web applications
+- [Swiftcomplete Address Autocomplete - JavaScript Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-javascript-component) – Add address autocomplete to websites and web applications  
+  _Not yet live on developer.what3words.com. See [current documentation](https://www.notion.so/Swiftcomplete-Swiftcomplete-API-JavaScript-1a066db17f3b8076bc67f00c1ca24742?pvs=4)_
 - [Swiftcomplete Address Autocomplete - iOS Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-ios-component) – Add address autocomplete to iOS applications
+  _Not yet live on developer.what3words.com.  
 - [Swiftcomplete Address Autocomplete - Android Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-android) – Add address autocomplete to Android applications
+  _Not yet live on developer.what3words.com.
 
 #### API
 
 Direct API access for address autocomplete.
 
-- [Swiftcomplete Address Autocomplete API](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-api) – Integrate address autocomplete via direct API calls
+- [Swiftcomplete Address Autocomplete API](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-api) – Integrate address autocomplete via direct API calls  
+  _Not yet live on developer.what3words.com. See [current documentation](https://swiftcomplete.notion.site/Swiftcomplete-Integration-Docs-1a466db17f3b80a18a63dced29d4cfb5)_
 
 ### Address Validation
 

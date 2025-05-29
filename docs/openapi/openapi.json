@@ -379,6 +379,20 @@
             }
           },
           {
+            "name": "n-focus-results",
+            "in": "query",
+            "description": "Specifies that the first `n-focus-results` suggestions should be biased towards the `focus` coordinate. Must be <= `n-results`. Defaults to `n-results`. The number of results to return that are near the focus point. A maximum of 100 results can be specified, if a number greater than this is requested, this will be truncated to the maximum. The default is 3.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "3",
+              "maximum": 100,
+              "examples": [
+                "5"
+              ]
+            }
+          },
+          {
             "name": "clip-to-country",
             "in": "query",
             "description": "Restricts results to the specified country or countries, specified as comma-separated ISO 3166-1 alpha-2 country codes.",
@@ -692,6 +706,20 @@
               "type": "string",
               "examples": [
                 "51.521251,-0.203586"
+              ]
+            }
+          },
+          {
+            "name": "n-focus-results",
+            "in": "query",
+            "description": "Specifies that the first `n-focus-results` suggestions should be biased towards the `focus` coordinate. Must be <= `n-results`. Defaults to `n-results`. The number of results to return that are near the focus point. A maximum of 100 results can be specified, if a number greater than this is requested, this will be truncated to the maximum. The default is 3.",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "3",
+              "maximum": 100,
+              "examples": [
+                "5"
               ]
             }
           },
