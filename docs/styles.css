@@ -133,7 +133,7 @@ body {
 
 .subtitle {
     font-size: var(--font-size-sm);
-    color: hsl(var(--gray-600));
+    color: var(--w3w-black);
     font-weight: 500;
 }
 
@@ -278,7 +278,7 @@ body {
 }
 
 .card-header p {
-    color: hsl(var(--gray-600));
+    color: var(--w3w-black);
     line-height: 1.6;
 }
 
@@ -358,7 +358,7 @@ body {
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    color: hsl(var(--gray-600));
+    color: var(--w3w-black);
     font-size: var(--font-size-sm);
 }
 
@@ -401,7 +401,7 @@ body {
 }
 
 .step-content p {
-    color: hsl(var(--gray-600));
+    color: var(--w3w-black);
     font-size: var(--font-size-sm);
     line-height: 1.5;
 }
@@ -450,7 +450,7 @@ body {
 }
 
 .resource-card.get-api-key p {
-    color: hsl(var(--gray-100));
+    color: var(--w3w-white);
 }
 
 .resource-card i {
@@ -467,7 +467,7 @@ body {
 }
 
 .resource-card p {
-    color: hsl(var(--gray-600));
+    color: var(--w3w-black);
     font-size: var(--font-size-sm);
     line-height: 1.5;
 }
