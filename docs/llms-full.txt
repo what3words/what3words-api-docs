@@ -972,7 +972,7 @@ This schema defines the properties and characteristics of each language's word l
 | English | en | en |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
 | Estonian | et | et |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 15 | 14 | 47 | prefix | left |
 | Finnish | fi | fi |   | Latin | True |   | ltr | . | False |   | False |   | 4 | 17 | 14 | 53 | prefix | left |
-| French | fr | fr |   | Latin | True |   | ltr | . | True | Handles common French homophones: plural -s variants and alternate conjugations of -er verbs; ‘œ’ may be typed as ‘oe’. | False |   | 3 | 20 | 11 | 62 | prefix | left |
+| French | fr | fr |   | Latin | True |   | ltr | . | True | 'œ' may be typed as 'oe'. | False |   | 3 | 20 | 11 | 62 | prefix | left |
 | German | de | de |   | Latin | True |   | ltr | . | True | Note: 'ä' can also be inputted as 'ae'; 'ö' can also be inputted as 'oe'; 'ü' can also be inputted as 'ue' | False |   | 3 | 19 | 11 | 59 | prefix | left |
 | Greek | el | el |   | Greek | True |   | ltr | . | False |   | False |   | 4 | 18 | 14 | 56 | prefix | left |
 | Gujarati | gu | gu |   | Gujarati | True |   | ltr | . | False |   | False |   | 3 | 17 | 11 | 53 | prefix | left |
