@@ -1,12 +1,21 @@
----
-title: "what3words Developer Documentation and API Reference - Full Guide"
-description: "Comprehensive guide to integrating what3words location technology including detailed API references, SDKs, components, implementation tutorials, case studies, troubleshooting, best practices, and data schemas."
-keywords: "what3words, 3 word address, location API, geocoding, address system, developer tools, mapping integration, SDK, autosuggest, API reference, API examples, word list schema, API best practices, troubleshooting"
-author: "what3words Developer Team"
-last_updated: "May 27, 2025"
----
+what3words API Docs: Developer resources, OpenAPI specs, and LLM integration guides for precise location technology.  
+Last-Modified: 2025-07-03
 
 # what3words Developer Documentation - Full Guide
+
+## HIGH-VALUE FAQ
+
+**Q:** *How do I add a 3 word address search box to my website?*  
+**A:** Use the JavaScript AutoSuggest Component – see guide ➜ /tutorial/using-the-javascript-autosuggest-component-v5/
+
+**Q:** *How do I convert coordinates to a 3WA in code?*  
+**A:** Call GET /convert‑to‑3wa in our REST API – see API docs ➜ /public-api/docs#convert-to-3wa
+
+**Q:** *Where do I get an API key?*  
+**A:** Create one in the Developer Dashboard ➜ https://accounts.what3words.com/create-api-key
+
+**Q:** *How do I add the what3words Search box component to a Replit project?*  
+**A:** Use the CDN version of the component to avoid vite.config issues
 
 > **what3words** is a global addressing system that has divided the world into 3m squares, each with a unique 3 word address. This comprehensive documentation provides detailed resources for developers integrating what3words technology, covering APIs, SDKs, components, best practices, and advanced topics.
 
@@ -27,6 +36,7 @@ Implement what3words address search functionality across different platforms wit
 Add what3words address search to websites and web applications.
 
 - [Using the JavaScript AutoSuggest Component (v5)](https://developer.what3words.com/tutorial/using-the-javascript-autosuggest-component-v5/) – Add a what3words AutoSuggest input box to your website
+- [JavaScript SDK](https://developer.what3words.com/tutorial/javascript-sdk/) – Integrate what3words into web apps using the JavaScript SDK and web components
 
 ### iOS Search Box SDK
 
@@ -97,23 +107,18 @@ Implement address autocomplete functionality across platforms.
 
 Add address autocomplete to e-commerce platforms.
 
-- [Swiftcomplete Address Autocomplete - Shopify](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-shopify) – Implement address autocomplete in Shopify stores
-  _Not yet live on developer.what3words.com.
+- [Swiftcomplete Address Autocomplete - Shopify Plus](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-shopify) – Implement address autocomplete in Shopify stores
 - [Swiftcomplete Address Autocomplete - WooCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-woocommerce) – Implement address autocomplete in WooCommerce stores  
-  _See also [current documentation](https://swiftcomplete.notion.site/WooCommerce-plugin-for-Swiftcomplete-1a466db17f3b8018bc4ce65f85f6c852)_
 - [Swiftcomplete Address Autocomplete - BigCommerce](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-bigcommerce) – Implement address autocomplete in BigCommerce stores  
-  _See also [current documentation](https://swiftcomplete.notion.site/BigCommerce-Integration-for-Swiftcomplete-1d666db17f3b80e9bfceef1d64bea34d)_
-- [Adding Swiftcomplete Address Autocomplete to E-commerce Checkout](https://developer.what3words.com/tutorial/adding-swiftcomplete-address-autocomplete-to-ecommerce-checkout/) – General guide for adding address autocomplete to e-commerce platforms  
-  _Not yet live on developer.what3words.com. See [current documentation](https://swiftcomplete.notion.site/Swiftcomplete-Integration-Docs-1a466db17f3b80a18a63dced29d4cfb5)_
 - [Swiftcomplete Address Autocomplete - Ecwid](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-ecwid) – Implement address autocomplete in Ecwid stores  
-  _See also [current documentation](https://swiftcomplete.notion.site/Ecwid-Integration-for-Swiftcomplete-1f466db17f3b800a95ffef566d22b0f4)_
+- [Adding Swiftcomplete Address Autocomplete to E-commerce Checkout](https://developer.what3words.com/tutorial/adding-swiftcomplete-address-autocomplete-to-ecommerce-checkout/) – General guide for adding address autocomplete to e-commerce platforms  
+  _Not yet live on developer.what3words.com. See [current documentation]
 
 #### Web and Mobile Components
 
 Implement address autocomplete in custom applications.
 
 - [Swiftcomplete Address Autocomplete - JavaScript Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-javascript-component) – Add address autocomplete to websites and web applications  
-  _See also [current documentation](https://www.notion.so/Swiftcomplete-Swiftcomplete-API-JavaScript-1a066db17f3b8076bc67f00c1ca24742?pvs=4)_
 - [Swiftcomplete Address Autocomplete - iOS Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-ios-component) – Add address autocomplete to iOS applications
   _Not yet live on developer.what3words.com.  
 - [Swiftcomplete Address Autocomplete - Android Component](https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-android) – Add address autocomplete to Android applications
@@ -1043,11 +1048,11 @@ Essential resources for what3words developers.
 - [Developer site - Public API](https://developer.what3words.com/public-api) – Public API documentation and resources
 - [Developer site - Enterprise Suite](https://developer.what3words.com/enterprise-suite) – Enterprise-level integration solutions
 - [Plan Pricing](https://accounts.what3words.com/select-plan) – API pricing and subscription plans
-- [Help & Support](mailto:support@swiftcomplete.com) – Contact the support team for assistance
+- [Help & Support](mailto:support@what3words.com) – Contact the support team for assistance
 - [OpenAPI Spec](https://openapi.what3words.com/openapi/openapi.yaml) – OpenAPI specification for what3words API
 - [Postman collection](https://openapi.what3words.com/what3words.postman_collection.json) – Ready-to-use Postman collection for API testing
 
-## Additional Tutorials
+## Optional
 
 Additional resources organized by implementation type.
 
@@ -1055,7 +1060,6 @@ Additional resources organized by implementation type.
 
 Additional UI component implementations.
 
-- [JavaScript SDK](https://developer.what3words.com/tutorial/javascript-sdk/) – Integrate what3words into web apps using the JavaScript SDK and web components
 - [Creating an AutoSuggest input box (v3.1, deprecated)](https://developer.what3words.com/tutorial/creating-an-autosuggest-input-box-with-what3words-js-v3-1-deprecated/) – **Deprecated:** Add a what3words AutoSuggest address input to a webpage in just a few lines of code
 
 ### Mobile Integration
@@ -1091,10 +1095,8 @@ Implementation guides for specific industries.
 - [Logistics – How to add what3words for logistics](https://developer.what3words.com/tutorial/logistics/) – Step-by-step guide to integrate what3words into a logistics/delivery system
 - [Navigation – How to add what3words to a navigation app](https://developer.what3words.com/tutorial/navigation/) – Guide to integrate what3words into a navigation or maps application
 
-<!-- 
 Schema.org metadata for improved search engine understanding
 -->
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
@@ -1120,7 +1122,6 @@ Schema.org metadata for improved search engine understanding
     "@id": "https://developer.what3words.com/documentation-full"
   }
 }
-</script>
 
 
 ## TROUBLESHOOTING GUIDE
@@ -1259,6 +1260,20 @@ fetch("https://api.what3words.com/v3/convert-to-coordinates?words=filled.count.s
 
 ## FREQUENTLY ASKED QUESTIONS
 
+### High-Value FAQ
+
+**Q:** *How do I add a 3 word address search box to my website?*  
+**A:** Use the JavaScript AutoSuggest Component – see guide ➜ /tutorial/using-the-javascript-autosuggest-component-v5/
+
+**Q:** *How do I convert coordinates to a 3WA in code?*  
+**A:** Call GET /convert‑to‑3wa in our REST API – see API docs ➜ /public-api/docs#convert-to-3wa
+
+**Q:** *Where do I get an API key?*  
+**A:** Create one in the Developer Dashboard ➜ https://accounts.what3words.com/create-api-key
+
+**Q:** *How do I add the what3words Search box component to a Replit project?*  
+**A:** Use the CDN version of the component to avoid vite.config issues
+
 ### General Questions
 
 #### What is a what3words address?
@@ -1324,7 +1339,7 @@ Use the `language` parameter to specify the desired language for API responses. 
 Implement request throttling, add caching for common requests, and consider upgrading your API plan if needed.
 
 #### How do I report issues or get support?
-For technical support, contact [support@what3words.com](mailto:support@what3words.com). For API-specific questions, you can also reach out to [support@swiftcomplete.com](mailto:support@swiftcomplete.com).
+For technical support, contact [support@what3words.com](mailto:support@what3words.com). For API-specific questions, you can also reach out to [support@what3words.com](mailto:support@what3words.com).
 
 
 ## PERFORMANCE OPTIMIZATION
