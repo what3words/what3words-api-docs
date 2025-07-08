@@ -15,6 +15,13 @@
     <priority>0.8</priority>
   </url>
 
+   <!-- OpenAPI JSON -->
+  <url>
+    <loc>https://openapi.what3words.com/openapi/openapi.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Swagger UI or Redoc viewer -->
   <url>
     <loc>https://openapi.what3words.com/openapi/</loc>
@@ -35,7 +42,14 @@
   </url>
     <!-- API Reference -->
     <url>
-      <loc>https://developer.what3words.com/public-api/docs</loc>
+      <loc>https://developer.what3words.com/tutorial/swiftcomplete-address-autocomplete-api</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <!-- Swiftcomplete Developer Documentation -->
+    <url>
+      <loc>https://developer.what3words.com/tutorial/list?&technology=swiftcomplete</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>

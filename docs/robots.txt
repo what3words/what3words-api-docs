@@ -1,5 +1,6 @@
 # Explicitly allow AI/LLM crawlers on this host
 User-agent: *
+Allow: /openapi
 Allow: /openapi/openapi.yaml 
 Allow: /openapi/openapi.json
 Allow: /llms.txt
