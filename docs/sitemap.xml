@@ -47,6 +47,13 @@
       <priority>0.8</priority>
     </url>
 
+    <!-- Swiftcomplete Developer Documentation -->
+    <url>
+      <loc>https://developer.what3words.com/tutorial/list?technology=swiftcomplete</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
     <!-- Postman Collection -->
     <url>
         <loc>https://openapi.what3words.com/what3words.postman_collection.json</loc>
