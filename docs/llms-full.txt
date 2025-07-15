@@ -951,7 +951,7 @@ This schema defines the properties and characteristics of each language's word l
 - Each language group has one `is_default_display_locale = TRUE`.
 - For languages with multiple scripts (e.g. `zh_si` vs `zh_tr`), each script has its own row—but all scripts share identical word-to-location mappings.
 - API code `"oo"` is used by Bosnian, Croatian, Montenegrin, and Serbian to indicate shared word lists (Latin & Cyrillic), despite different ISO codes.
-- Chinese and Japanese use different default delimiters on purpose.
+- Japanese use different default delimiters on purpose.
 
 #### Languages Table
 
