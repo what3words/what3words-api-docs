@@ -1314,7 +1314,7 @@ You can add a what3words field alongside traditional address fields using the Au
 Yes, you can use the `/grid-section` API endpoint to get grid lines for a specific area, then render these lines on your map using your preferred mapping library.
 
 #### How do I validate a what3words address without calling the API?
-You can check if a string matches the pattern of a what3words address (three words separated by the correct delimiter) using regular expressions, but this only validates the format—not whether the address actually exists. For more robust validation, refer to the [regex tutorial](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-what3words-address-using-regex/).
+You can check if a string matches the pattern of a what3words address (three words separated by the correct delimiter) using regular expressions, but this only validates the format—not whether the address actually exists. For more robust validation, refer to the [regex tutorial](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-3-word-address/).
 
 If you are using an official what3words API library, you can use helper functions such as `isPossible3wa` (checks format) and `isValid3wa` (checks if the address exists via API). 
 
