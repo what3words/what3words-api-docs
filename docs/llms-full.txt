@@ -892,7 +892,7 @@ Official API wrappers for various programming languages. These libraries simplif
 
 Validate what3words addresses without API calls using regular expressions.
 
-- [Detecting if text is a what3words address using RegEx](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-what3words-address-using-regex/) – Check if a string matches the pattern of a 3 word address without calling the API. Note: This only checks the format, not if the address actually exists.
+- [Detecting if text is a what3words address using RegEx](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-3-word-address/) – Check if a string matches the pattern of a 3 word address without calling the API. Note: This only checks the format, not if the address actually exists.
 
 ### Error codes & rate limits
 
