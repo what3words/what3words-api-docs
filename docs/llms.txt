@@ -304,7 +304,7 @@ Official API wrappers for various programming languages.
 
 Validate what3words addresses without API calls.
 
-- [Detecting if text is a what3words address using RegEx](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-what3words-address-using-regex/) – Check if a string matches the pattern of a 3 word address without calling the API
+- [Detecting if text is a what3words address using RegEx](https://developer.what3words.com/tutorial/detecting-if-text-is-in-the-format-of-a-3-word-address/) – Check if a string matches the pattern of a 3 word address without calling the API
 
 ### Error codes & rate limits
 
