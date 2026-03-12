@@ -299,7 +299,7 @@ Converts latitude and longitude coordinates to a what3words address.
 | `coordinates` | Yes      | string | Latitude and longitude as a comma-separated string (e.g., "51.521251,-0.203586").                           |
 | `language`    | No       | string | A supported what3words language code from `/available-languages` (for example `en`, `fr`, `mn_la`, `zh_tr`, `oo_la`). Defaults to "en". |
 | `format`      | No       | string | Response format. "json" (default) or "geojson".                                                          |
-| `locale`      | No       | string | Optional script-specific code. If both `language` and `locale` are provided, they must be identical strings (for example `language=mn_la&locale=mn_la`). |
+| `locale`      | No       | string | Optional locale/script-specific code. Can be passed on its own. If both `language` and `locale` are provided, they must be identical strings (for example `language=mn_la&locale=mn_la`). |
 
 - **Common Errors:**
 
@@ -490,10 +490,10 @@ Provides suggestions for valid what3words addresses based on partial or incorrec
 | `clip-to-circle`       | No       | string  | Restricts suggestions to a circular area. Format: "center latitude,center longitude,radius in kilometers" (e.g., "51.4243877,-0.3474524,10").                                                                                                                                                                                                                  |
 | `clip-to-polygon`      | No       | string  | Restricts suggestions to a polygon defined by a comma-separated list of "latitude,longitude" pairs (e.g., "51.521,-0.343,52.6,1.343,51.1,-0.343").                                                                                                                                                                                                              |
 | `input-type`           | No       | string  | Specifies input mode. Options: "text" (default), "vocon-hybrid", "nmdp-asr", "generic-voice", "speechmatics", "vin-big-data". Voice modes require `language`; invalid format for a selected voice mode can return `BadInput`.                                                                                                                                                |
-| `language`             | No       | string  | For text input, specifies the language to return suggestions in. For voice input (`input-type` != "text"), this **must** be provided. Use a supported code from `/available-languages` (for example `en`, `fr`, `mn_la`, `zh_tr`, `oo_la`). Defaults to "en". |
+| `language`             | No       | string  | For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != "text"), this **must** be provided. Use a supported code from `/available-languages` (for example `en`, `fr`, `mn_la`, `zh_tr`, `oo_la`). |
 | `prefer-land`          | No       | boolean | Biases results towards land locations (default: true). Does not exclude sea locations but ranks them lower unless the input is an exact match for a sea location.                                                                                                                                                                                                |
 | `format`               | No       | string  | Response format. "json" (default) or "geojson".                                                                                                                                                                                                                                                                                                                |
-| `locale`               | No       | string  | Optional script-specific code. If both `language` and `locale` are provided, they must be identical strings (for example `language=mn_la&locale=mn_la`). |
+| `locale`               | No       | string  | Optional locale/script-specific code. Can be passed on its own. If both `language` and `locale` are provided, they must be identical strings (for example `language=mn_la&locale=mn_la`). |
 
 - **Common Errors:**
 
@@ -798,7 +798,7 @@ Retrieves a list of all languages currently supported by the what3words API for 
 - **API Usage Notes:**
     - Call this endpoint periodically (e.g., daily or weekly) or on application startup to get the latest list of supported languages.
     - Use the response to populate language selection options in your user interface.
-    - The response includes the native name, English name, and the 2-letter code required by other API endpoints.
+    - The response includes the native name, English name, the base language code, and, where applicable, nested locale/script variants used by other API endpoints.
 
 - **Examples:**
 
@@ -1327,7 +1327,7 @@ Ensure you've entered at least two complete words and started typing the third w
 Verify your API key is valid and correctly included in requests. Check that you're using the right key for your environment and that it has the necessary permissions.
 
 #### How do I handle different languages and scripts?
-Use the `language` parameter to specify the desired language for API responses. For script-specific variants, prefer passing the script code directly in `language` (for example `mn_la`), or pass matching values in both fields (`language=mn_la&locale=mn_la`). Do not mix base and script forms (`language=mn&locale=mn_la` returns `BadLanguage`).
+Handle this by endpoint. On `/convert-to-3wa`, use `language` to choose the output language or explicit locale. On text `/autosuggest`, `language` adds a preferred language or locale to the set Autosuggest considers; exact whole-word matches can also bring languages or locales into play, and omitted `language` adds English as the default backstop. On `/convert-to-coordinates`, extra `language` and `locale` parameters are ignored. For locale-bearing families, prefer explicit locale codes such as `mn_la` when script or output form matters. `locale` can also be passed on its own; if both `language` and `locale` are provided, they must be identical strings.
 
 #### What should I do if I exceed my API rate limits?
 Implement request throttling, add caching for common requests, and consider upgrading your API plan if needed.
@@ -1595,6 +1595,97 @@ For detailed information about each supported language, refer to the Word List S
 - Word length constraints
 
 This information is essential for properly handling the unique characteristics of each language in your what3words implementation.
+
+### Embedded reference: Language and locale behaviour in the what3words API
+
+The following section is embedded verbatim from `how_to_call_what3words_api_re_languages_locales_short.md`.
+
+# Language and Locale Behaviour in the what3words API (Short)
+
+## Need to know
+
+- Use `https://api.what3words.com/v3/available-languages` to retrieve the current supported languages. For locale-bearing families, locale variants are returned in the `locales` array.
+- The current locale-bearing language families are:
+  - `zh`: default `zh_si`, other locale `zh_tr`
+  - `mn`: default `mn_cy`, other locale `mn_la`
+  - `kk`: default `kk_cy`, other locale `kk_la`
+  - `oo`: default `oo_la`, other locale `oo_cy`
+- what3words word tokens are globally unique across all supported languages and locales.
+
+## `convert-to-3wa`
+
+### Languages without locale variants
+
+- Pass `language=<code>`.
+- The response returns `language: "<code>"` and no `locale`.
+- Example: `language=fr` returns French words with `language: "fr"` and no `locale`.
+
+### Locale-bearing families
+
+- `language=<base>` works.
+- `language=<locale>` also works.
+- `locale=<locale>` also works, including without `language`.
+- If both `language` and `locale` are passed, they must be the same string. Mixed values such as `language=mn&locale=mn_la` fail validation.
+- Default locales are collapsed in the response.
+- Example: `language=mn` and `language=mn_cy` both return Cyrillic Mongolian output with `language: "mn"` and no `locale`.
+- Example: `language=mn_la` returns Latin Mongolian output with `language: "mn", locale: "mn_la"`.
+- Use the base family code if the default locale is wanted.
+- Use the explicit locale code if a non-default locale is wanted.
+- Do not expect the response to echo the default locale code. For example, `language=mn_cy` does not come back as `locale: "mn_cy"`.
+
+## `convert-to-coordinates`
+
+### Languages without locale variants
+
+- This endpoint resolves the submitted 3 word address to coordinates and reports the language implied by those words. This is deterministic because what3words word tokens are globally unique across all supported languages and locales.
+- The response returns `language: "<code>"` and no `locale`.
+- Example: `words=ristourner.étalement.doux` returns `language: "fr"` and no `locale`.
+- If `language` or `locale` is passed anyway, those parameters are ignored.
+
+### Locale-bearing families
+
+- This endpoint resolves the submitted 3 word address to coordinates and reports the locale implied by those words.
+- Default-locale inputs return no `locale`.
+- Non-default-locale inputs return an explicit `locale`.
+- If `language` or `locale` is passed anyway, those parameters are ignored.
+- Example: `words=шүүрдэх.хайрт.загасчин` returns `language: "mn"` and no `locale`.
+- Example: `words=shuurdeh.hairt.zagaschin` returns `language: "mn", locale: "mn_la"`.
+- Use this endpoint to identify which square the submitted 3 word address refers to, and which input language or locale that address is in. If that same square then needs to be shown back to the user in a specific output locale, call `convert-to-3wa` afterwards with the required `language` or `locale`.
+
+## `autosuggest` (`input-type=text`)
+
+Autosuggest tries to work out which language or locale the entered 3 word address is most likely meant to be in. It uses exact whole-word matches in word 1, word 2, and word 3, and it also uses the request `language` as an additional signal.
+
+### Languages without locale variants
+
+- `language` is not a hard filter.
+- `language` is not only a zero-match fallback.
+- Exact whole-word matches in word 1, word 2, and word 3 add the matching languages to the set of languages Autosuggest considers.
+- If `language` is passed, Autosuggest also considers that language.
+- If `language` is omitted, Autosuggest still considers English as the default backstop for text input.
+- Results are returned as one merged ranked list, not separate per-language buckets.
+- Example: an exact French input such as `ristourner.étalement.doux` returns French suggestions with `language: "fr"` and no `locale`, both with and without `language=fr`.
+- If `zzz` is added to each of these French words, it makes those altered words invalid in any what3words language.
+- Example: French input such as `ristournerzzz.étalementzzz.doux` with `language=fr` returns French suggestions such as `ristourner.étalement.doux` because `doux` is still an exact French word, which is enough for Autosuggest to consider French.
+- Example: French input such as `ristournerzzz.étalementzzz.doux` with `language` omitted also returns French suggestions such as `ristourner.étalement.doux` because `doux` is still an exact French word, so French is still considered even with language omitted.
+- Example: French input such as `ristournerzzz.étalementzzz.douxzzz` with `language=fr` returns French suggestions such as `ristourner.étalement.doux` because the explicit `language=fr` makes Autosuggest consider French even though none of the three words is an exact match.
+- Example: French input such as `ristournerzzz.étalementzzz.douxzzz` with `language` omitted returns English suggestions such as `return.statement.doubts` because none of the three words is an exact match in any what3words language, so Autosuggest falls back to English.
+
+### Locale-bearing families
+
+- As above, if `language` is passed, that language or locale is added to the set of languages or locales Autosuggest considers; if language is omitted, English is added as the default backstop; exact whole-word matches in word 1, word 2, and word 3 can also add languages or locales to that set.
+- Passing a base family code such as `zh`, `mn`, `kk`, or `oo` does not force the default locale.
+- If the input already implies a more specific locale, Autosuggest preserves that locale.
+- Example: `input=shuurdeh.hairt.zagaschin&language=mn` returns Latin Mongolian output with `locale: "mn_la"`.
+- Passing an explicit locale code such as `zh_si`, `mn_cy`, `kk_cy`, or `oo_la` forces the output locale for that family when Autosuggest is considering that language family.
+- Example: `input=шүүрдэх.хайрт.загасчин&language=mn_la` returns Latin Mongolian output with `locale: "mn_la"`.
+- Unlike `convert-to-3wa`, Autosuggest returns default locales explicitly when they are requested.
+- Example: `input=shuurdeh.hairt.zagaschin&language=mn_cy` returns suggestions such as `шүүрдэх.хайрт.загасчин`, `шүүрдэх.хальт.загасчин`, and `шүүрдэх.барих.загасчид`, each with `locale: "mn_cy"`.
+- If output script or locale matters, pass the explicit locale code.
+
+### Summary
+- If the input is most likely to be in a specific language or locale, pass `language=<that_language_or_locale>` to improve the chances of catching typos in that language, especially when none of word 1, word 2, or word 3 is already an exact whole-word match in it.
+- If the input already contains exact words from multiple languages, expect one merged ranked list and do not assume each language will appear equally high in the results.
 
 ## GLOSSARY OF TERMS
 
