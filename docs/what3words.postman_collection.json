@@ -13,7 +13,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163&format=geojson",
+          "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163",
           "host": [
             "https://api.what3words.com/v3"
           ],
@@ -48,7 +48,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163&format=geojson",
+              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -86,7 +86,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/grid-section?key=xx&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163&format=geojson",
+              "raw": "https://api.what3words.com/v3/grid-section?key=xx&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -124,7 +124,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=x,x&format=geojson",
+              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=x,x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -162,7 +162,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=10,20,11,21&format=geojson",
+              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=10,20,11,21",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -237,7 +237,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/grid-section?bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163&format=geojson",
+              "raw": "https://api.what3words.com/v3/grid-section?bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -270,7 +270,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163&format=geojson&bounding-box=52.207988,0.116126,52.208867,0.117540",
+              "raw": "https://api.what3words.com/v3/grid-section?key=YOUR-API-KEY&bounding-box=41.715357897380166,-81.23006078232189,41.72170994565959,-81.22155079711163&bounding-box=52.207988,0.116126,52.208867,0.117540",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -314,7 +314,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&format=json&language=en&locale=None",
+          "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&language=en",
           "host": [
             "https://api.what3words.com/v3"
           ],
@@ -342,11 +342,6 @@
               "key": "language",
               "value": "en",
               "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
-            },
-            {
-              "key": "locale",
-              "value": null,
-              "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
             }
           ]
         },
@@ -359,7 +354,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&format=json&language=en&locale=None",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&language=en",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -385,12 +380,6 @@
                   "key": "language",
                   "value": "en",
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
-                },
-                {
-                  "key": "locale",
-                  "value": null,
-                  "disabled": true,
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
                 }
               ]
             }
@@ -406,7 +395,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=WrongKEY&coordinates=51.521251,-0.203586&format=json&language=en&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=WrongKEY&coordinates=51.521251,-0.203586&language=en",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -434,12 +423,6 @@
                   "key": "language",
                   "value": "en",
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
-                  "disabled": true
                 }
               ]
             }
@@ -455,7 +438,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&format=json&language=rr&locale=None",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&language=rr",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -481,12 +464,6 @@
                   "key": "language",
                   "value": "rr",
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
-                },
-                {
-                  "key": "locale",
-                  "value": null,
-                  "disabled": true,
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
                 }
               ]
             }
@@ -502,7 +479,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&format=json&language=en&locale=xx",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&language=mn&locale=mn_la",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -526,14 +503,13 @@
                 },
                 {
                   "key": "language",
-                  "value": "en",
-                  "disabled": true,
+                  "value": "mn",
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
                 },
                 {
                   "key": "locale",
-                  "value": "xx",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
+                  "value": "mn_la",
+                  "description": "Optional locale/script-specific code. Can be passed on its own. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
                 }
               ]
             }
@@ -549,7 +525,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=x,x&format=json&language=en&locale=None",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=x,x&language=en",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -575,12 +551,6 @@
                   "key": "language",
                   "value": "en",
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
-                },
-                {
-                  "key": "locale",
-                  "value": null,
-                  "disabled": true,
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
                 }
               ]
             }
@@ -636,7 +606,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?coordinates=51.521251,-0.203586&format=json&language=en&locale=None",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?coordinates=51.521251,-0.203586&language=en",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -659,11 +629,6 @@
                   "key": "language",
                   "value": "en",
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
-                },
-                {
-                  "key": "locale",
-                  "value": null,
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
                 }
               ]
             }
@@ -679,7 +644,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&format=json&language=en&locale=None&coordinates=51.432393,-0.348023",
+              "raw": "https://api.what3words.com/v3/convert-to-3wa?key=YOUR-API-KEY&coordinates=51.521251,-0.203586&language=en&coordinates=51.432393,-0.348023",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -709,11 +674,6 @@
                   "description": "A supported what3words language code from `/available-languages`. You can pass base language codes (for example `fr`) or script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en` (English) if not specified."
                 },
                 {
-                  "key": "locale",
-                  "value": null,
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
-                },
-                {
                   "key": "coordinates",
                   "value": "51.432393,-0.348023"
                 }
@@ -733,7 +693,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=json&words=///filled.count.soap",
+          "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY",
           "host": [
             "https://api.what3words.com/v3"
           ],
@@ -769,7 +729,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=json&words=///filled.count.soap",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&words=///filled.count.soap",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -807,7 +767,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=wrongKey&format=json&words=///filled.count.soap",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=wrongKey",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -846,7 +806,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=xx&words=///filled.count.soap",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=xx",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -884,7 +844,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=json&words=///filled.count.soa",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&words=///filled.count.soa",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -922,7 +882,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=json&words=///filled.count.soap",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -961,7 +921,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?format=json&words=///filled.count.soap",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -995,7 +955,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&format=json&words=///filled.count.soap&words=index.home.raft",
+              "raw": "https://api.what3words.com/v3/convert-to-coordinates?key=YOUR-API-KEY&words=index.home.raft",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1041,7 +1001,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+          "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s",
           "host": [
             "https://api.what3words.com/v3"
           ],
@@ -1104,7 +1064,7 @@
             {
               "key": "language",
               "value": "en",
-              "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+              "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
               "disabled": true
             },
             {
@@ -1118,12 +1078,6 @@
               "value": "false",
               "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
               "disabled": true
-            },
-            {
-              "key": "locale",
-              "value": "mn_la",
-              "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
-              "disabled": true
             }
           ]
         },
@@ -1136,7 +1090,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1199,7 +1153,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1212,12 +1166,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1234,7 +1182,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=xx&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=xx&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1297,7 +1245,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1310,12 +1258,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1332,7 +1274,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1395,7 +1337,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1408,12 +1350,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1430,7 +1366,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1492,7 +1428,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1505,12 +1441,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1527,7 +1457,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GBR&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&clip-to-country=GBR",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1589,7 +1519,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1602,12 +1532,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1624,7 +1548,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=x,x&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&clip-to-bounding-box=x,x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1686,7 +1610,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1699,12 +1623,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1721,7 +1639,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&clip-to-circle=51.4243877,-0.3474524,10",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1783,7 +1701,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1796,12 +1714,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1818,7 +1730,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=x,x&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&clip-to-polygon=x,x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1880,7 +1792,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1893,12 +1805,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -1915,7 +1821,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&input-type=text",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -1977,7 +1883,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -1990,12 +1896,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -2012,7 +1912,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=nmdp-asr&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&input-type=nmdp-asr",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2074,7 +1974,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2087,12 +1987,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -2109,7 +2003,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=x&headers=&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&prefer-land=x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2172,7 +2066,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2190,12 +2084,6 @@
                   "key": "headers",
                   "value": "",
                   "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
-                  "disabled": true
                 }
               ]
             }
@@ -2211,7 +2099,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&language=mn&locale=mn_la",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2273,9 +2161,8 @@
                 },
                 {
                   "key": "language",
-                  "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
-                  "disabled": true
+                  "value": "mn",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`)."
                 },
                 {
                   "key": "n-results",
@@ -2291,8 +2178,7 @@
                 },
                 {
                   "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
+                  "value": "mn_la"
                 }
               ]
             }
@@ -2308,7 +2194,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest?input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2366,7 +2252,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2379,12 +2265,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -2401,7 +2281,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la&n-results=abc",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&n-results=abc",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2464,7 +2344,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2477,12 +2357,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -2504,7 +2378,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la&n-focus-results=abc",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&n-focus-results=abc",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2567,7 +2441,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2580,12 +2454,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -2607,7 +2475,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&language=en&n-results=3&prefer-land=false&locale=mn_la&input-type=vocon-hybrid",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&input-type=vocon-hybrid",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2664,7 +2532,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2677,12 +2545,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -2704,7 +2566,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la&input=index.home.r",
+              "raw": "https://api.what3words.com/v3/autosuggest?key=YOUR-API-KEY&input=filled.count.s&input=index.home.r",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2767,7 +2629,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2780,12 +2642,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -2809,7 +2665,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+          "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s",
           "host": [
             "https://api.what3words.com/v3"
           ],
@@ -2872,7 +2728,7 @@
             {
               "key": "language",
               "value": "en",
-              "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+              "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
               "disabled": true
             },
             {
@@ -2886,12 +2742,6 @@
               "value": "false",
               "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
               "disabled": true
-            },
-            {
-              "key": "locale",
-              "value": "mn_la",
-              "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
-              "disabled": true
             }
           ]
         },
@@ -2904,7 +2754,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -2967,7 +2817,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -2980,12 +2830,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3002,7 +2846,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=xx&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=xx&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3065,7 +2909,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3078,12 +2922,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3100,7 +2938,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3163,7 +3001,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3176,12 +3014,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3198,7 +3030,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3260,7 +3092,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3273,12 +3105,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3295,7 +3121,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GBR&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&clip-to-country=GBR",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3357,7 +3183,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3370,12 +3196,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3392,7 +3212,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=x,x&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&clip-to-bounding-box=x,x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3454,7 +3274,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3467,12 +3287,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3489,7 +3303,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&clip-to-circle=51.4243877,-0.3474524,10",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3551,7 +3365,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3564,12 +3378,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3586,7 +3394,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=x,x&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&clip-to-polygon=x,x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3648,7 +3456,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3661,12 +3469,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3683,7 +3485,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&input-type=text",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3745,7 +3547,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3758,12 +3560,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3780,7 +3576,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=nmdp-asr&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&input-type=nmdp-asr",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3842,7 +3638,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3855,12 +3651,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -3877,7 +3667,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=x&headers=&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&prefer-land=x",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -3940,7 +3730,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -3958,12 +3748,6 @@
                   "key": "headers",
                   "value": "",
                   "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
-                  "disabled": true
                 }
               ]
             }
@@ -3979,7 +3763,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&language=mn&locale=mn_la",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4041,9 +3825,8 @@
                 },
                 {
                   "key": "language",
-                  "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
-                  "disabled": true
+                  "value": "mn",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`)."
                 },
                 {
                   "key": "n-results",
@@ -4059,8 +3842,7 @@
                 },
                 {
                   "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`)."
+                  "value": "mn_la"
                 }
               ]
             }
@@ -4076,7 +3858,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4139,7 +3921,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -4152,12 +3934,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -4174,7 +3950,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?input=filled.count.s",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4232,7 +4008,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -4245,12 +4021,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 }
               ]
@@ -4267,7 +4037,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la&n-results=abc",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&n-results=abc",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4330,7 +4100,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -4343,12 +4113,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -4370,7 +4134,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la&n-focus-results=abc",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&n-focus-results=abc",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4433,7 +4197,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -4446,12 +4210,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -4473,7 +4231,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&language=en&n-results=3&prefer-land=false&locale=mn_la&input-type=vocon-hybrid",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&input-type=vocon-hybrid",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4530,7 +4288,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -4543,12 +4301,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -4570,7 +4322,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&focus=50.842404,4.361177&n-focus-results=3&clip-to-country=GB,BE&clip-to-bounding-box=51.515900, -0.212517,51.527649, -0.191746&clip-to-circle=51.4243877,-0.3474524,10&clip-to-polygon=51.521,-0.343,52.6,2.3324,54.234,8.343,51.521,-0.343&input-type=text&language=en&n-results=3&prefer-land=false&locale=mn_la&input=index.home.r",
+              "raw": "https://api.what3words.com/v3/autosuggest-with-coordinates?key=YOUR-API-KEY&input=filled.count.s&input=index.home.r",
               "host": [
                 "https://api.what3words.com/v3"
               ],
@@ -4633,7 +4385,7 @@
                 {
                   "key": "language",
                   "value": "en",
-                  "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+                  "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
                   "disabled": true
                 },
                 {
@@ -4646,12 +4398,6 @@
                   "key": "prefer-land",
                   "value": "false",
                   "description": "Makes AutoSuggest prefer results on land to those in the sea. This setting is on by default. Use false to disable this setting and receive more suggestions in the sea.",
-                  "disabled": true
-                },
-                {
-                  "key": "locale",
-                  "value": "mn_la",
-                  "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
                   "disabled": true
                 },
                 {
@@ -4772,4 +4518,3 @@
     }
   ]
 }
-

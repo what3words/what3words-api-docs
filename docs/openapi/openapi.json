@@ -108,7 +108,7 @@
           {
             "name": "locale",
             "in": "query",
-            "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
+            "description": "Optional locale/script-specific code. Can be passed on its own. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
             "required": false,
             "schema": {
               "type": "string",
@@ -479,7 +479,7 @@
           {
             "name": "language",
             "in": "query",
-            "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+            "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
             "required": false,
             "schema": {
               "type": "string",
@@ -489,7 +489,7 @@
           {
             "name": "locale",
             "in": "query",
-            "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
+            "description": "Optional locale/script-specific code. Can be passed on its own. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
             "required": false,
             "schema": {
               "type": "string",
@@ -848,7 +848,7 @@
           {
             "name": "language",
             "in": "query",
-            "description": "For text input, specifies the language to return suggestions in. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words language code from `/available-languages`, including script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`). Defaults to `en`.",
+            "description": "For text input, adds a preferred language or locale to the set Autosuggest considers. Exact whole-word matches in the input can also add languages or locales. If omitted for text input, English is added as the default backstop. For voice input (`input-type` != `text`), this must be provided. Use a supported what3words code from `/available-languages`, including locale/script-specific codes where available (for example `mn_la`, `zh_tr`, `oo_la`).",
             "required": false,
             "schema": {
               "type": "string",
@@ -858,7 +858,7 @@
           {
             "name": "locale",
             "in": "query",
-            "description": "Optional script-specific language code. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
+            "description": "Optional locale/script-specific code. Can be passed on its own. If provided with `language`, both values must be identical strings (for example `language=mn_la&locale=mn_la`).",
             "required": false,
             "schema": {
               "type": "string",
@@ -1278,7 +1278,7 @@
           "what3words API"
         ],
         "summary": "Available languages",
-        "description": "Retrieves all available what3words address languages and script variants, including language code, English name and native name. Use the returned codes directly in request `language` values (for example `en`, `mn_la`, `zh_tr`, `oo_cy`).",
+        "description": "Retrieves all available what3words address languages and locale/script variants, including language code, English name and native name. Use top-level `code` values as base `language` codes, and use nested `locales[].code` values where explicit locale/script selection is needed (for example `en`, `mn`, `mn_la`, `zh_tr`, `oo_cy`).",
         "operationId": "availableLanguages",
         "parameters": [
           {
@@ -1423,7 +1423,7 @@
           },
           "locale": {
             "type": "string",
-            "description": "The locale of the what3words address, if applicable",
+            "description": "The locale of the what3words address, if returned",
             "examples": [
               "mn_la"
             ]
@@ -1476,7 +1476,7 @@
           },
           "locale": {
             "type": "string",
-            "description": "The locale of the what3words address, if applicable",
+            "description": "The locale of the what3words address, if returned",
             "examples": [
               "mn_la"
             ]
@@ -1529,7 +1529,7 @@
           },
           "locale": {
             "type": "string",
-            "description": "The locale of the what3words address, if applicable",
+            "description": "The locale of the what3words address, if returned",
             "examples": [
               "mn_la"
             ]
@@ -1803,7 +1803,7 @@
           },
           "locale": {
             "type": "string",
-            "description": "The locale of the what3words address, if applicable",
+            "description": "The locale of the what3words address, if returned",
             "examples": [
               "mn_la"
             ]
