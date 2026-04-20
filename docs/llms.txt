@@ -44,6 +44,7 @@ Implement what3words address search in iOS applications.
 
 - [Creating an AutoSuggest field in Swift](https://developer.what3words.com/tutorial/creating-an-autosuggest-text-field-with-swift/) – Add a 3 word address text field with AutoSuggest to an iOS app (Swift)
 - [Creating an AutoSuggest field in Objective-C](https://developer.what3words.com/tutorial/creating-an-autosuggest-text-field-with-objective-c/) – Add a 3 word address text field with AutoSuggest (dropdown) to an iOS app (Obj-C)
+- [Swift Samples (GitHub)](https://github.com/what3words/w3w-swift-samples) – Sample Swift projects and code examples for integrating what3words into iOS applications
 
 ### Android Search Box SDK
 
