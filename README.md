@@ -17,16 +17,24 @@ The repository is organised as follows:
 
 - **docs/**  
   Main documentation folder, including:
-  - `index.html`: Landing page for API docs and resources
+  - `index.html`: "OpenAPI & AI resources" home page: files, endpoints, authentication and errors
   - `llms.txt`, `llms-full.txt`: LLM-friendly metadata for AI tools
-  - `openapi/`: OpenAPI specifications (`openapi.yaml`, `openapi.json`) and viewer
+  - `openapi/`: OpenAPI specifications (`openapi.yaml`, `openapi.json`) and the endpoint browser (`index.html`)
   - `what3words.postman_collection.json`: Postman collection for API testing
-  - `assets/`: Images and static assets
+  - `assets/`: shared `site.css` and `site.js`, plus what3words brand assets in `assets/brand/`
+
+### Site pages
+
+- Both pages share `assets/site.css` and `assets/site.js`; there is no build step.
+- The what3words header and footer come from the corporate site shell. The blocks between the `shell:top` and `shell:bottom` comments must stay identical in `index.html` and `openapi/index.html`.
+- The endpoint browser reads `openapi/openapi.json` in the browser, so spec changes appear without editing HTML. Endpoint groups in the sidebar are set by `GROUPS` in `assets/site.js`; new paths appear under "Endpoints" until added there.
+- To show a "Last updated" date, set `info.x-last-updated` (`YYYY-MM-DD`) in the spec. HTTP `Last-Modified` is not used because GitHub Pages stamps every file with the deploy time.
 
 ## 📚 Key Resources
 
 - [what3words Developer Site](https://developer.what3words.com)
-- [API Reference (OpenAPI)](https://openapi.what3words.com/openapi/openapi.yaml)
+- [OpenAPI & AI resources](https://openapi.what3words.com/)
+- [OpenAPI definition (YAML)](https://openapi.what3words.com/openapi/openapi.yaml)
 - [Postman Collection](https://openapi.what3words.com/what3words.postman_collection.json)
 - [GitHub Repositories](https://github.com/what3words)
 

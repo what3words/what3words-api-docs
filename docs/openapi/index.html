@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <title>what3words Public API</title>
-  <link rel="icon" type="image/x-icon" href="assets/w3w_logo.png">
-  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css" />
-  <!-- This link tag specifies an alternate version of the document in Postman Collection format -->
-  <link rel="alternate" type="application/vnd.postman.collection+json" href="https://openapi.what3words.com/what3words.postman_collection.json">
-  <script type="application/ld+json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endpoints | OpenAPI &amp; AI resources | what3words</title>
+<meta name="description" content="Browse every endpoint in the what3words OpenAPI definition, with parameters, response fields and request examples in cURL, JavaScript and Python.">
+<link rel="canonical" href="https://openapi.what3words.com/openapi/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="what3words">
+<meta property="og:url" content="https://openapi.what3words.com/openapi/">
+<meta property="og:title" content="Endpoints | OpenAPI &amp; AI resources | what3words">
+<meta property="og:description" content="Every endpoint in the what3words OpenAPI definition, with parameters, response fields and examples.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/symbol.svg">
+<link rel="apple-touch-icon" href="/assets/w3w_logo.png">
+<!-- An alternate version of this document in Postman Collection format -->
+<link rel="alternate" type="application/vnd.postman.collection+json" href="https://openapi.what3words.com/what3words.postman_collection.json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
@@ -19,31 +28,196 @@
   "keywords": ["what3words", "API", "Postman", "OpenAPI"]
 }
 </script>
-  <style>
-    body {
-      margin: 0;
-    }
-    .topbar-wrapper img {
-      content: url("./assets/w3w_Symbol_RGB_Red.png");
-      height: 40px;
-    }
-    .topbar {
-      background-color: #ffffff;
-    }
-  </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
 </head>
-<body>
-<!-- what3words banner -->
-  <div class="topbar-wrapper"></div>
+<body data-page="reference">
+<a class="skip-link" href="#content">Skip to main content</a>
 
-  <!-- Swagger UI root -->
-  <div id="swagger-ui"></div>
-  <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
-  <script>
-    SwaggerUIBundle({
-      url: "openapi.yaml",
-      dom_id: "#swagger-ui",
-    });
-  </script>
+<!-- shell:top (keep identical in index.html and openapi/index.html) -->
+<header class="corp-header">
+  <nav class="corp-nav" aria-label="what3words">
+    <a class="corp-brand" href="https://what3words.com/" aria-label="what3words home"><img src="/assets/brand/header-logo.svg" width="143" height="24" alt=""></a>
+    <ul class="corp-links">
+      <li><a href="https://what3words.com/">Map</a></li>
+      <li><a href="https://what3words.com/products/what3words-app">App</a></li>
+      <li><a href="https://what3words.com/business">Business</a></li>
+      <li><a href="https://developer.what3words.com/">Developer</a></li>
+      <li><a href="https://what3words.com/products/pro">what3words Pro</a></li>
+    </ul>
+    <button class="corp-menu" type="button" aria-label="Open menu" aria-controls="corp-drawer" aria-expanded="false">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 12.5h16H8zm0 4h16H8zm0 4h16H8z"/></svg>
+    </button>
+  </nav>
+</header>
+<div class="corp-drawer" id="corp-drawer" hidden>
+  <button class="corp-drawer-backdrop" type="button" tabindex="-1" aria-label="Close menu" data-close-menu></button>
+  <div class="corp-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="corp-drawer-heading">
+    <div class="corp-drawer-head">
+      <h2 id="corp-drawer-heading">Explore what3words</h2>
+      <button class="corp-drawer-close" type="button" aria-label="Close menu" data-close-menu><span aria-hidden="true">&times;</span></button>
+    </div>
+    <nav aria-label="Menu">
+      <ul class="drawer-primary">
+        <li><a href="https://what3words.com/">Map</a></li>
+        <li><a href="https://what3words.com/products/what3words-app">App</a></li>
+        <li><a href="https://what3words.com/business">Business</a></li>
+        <li><a href="https://developer.what3words.com/">Developer</a></li>
+        <li><a href="https://what3words.com/products/pro">what3words Pro</a></li>
+      </ul>
+      <ul class="drawer-secondary">
+        <li><a href="https://products.what3words.com/integrated-products">Integrated Products</a></li>
+        <li><a href="https://what3words.com/ways-to-use">Ways to use</a></li>
+        <li><a href="https://what3words.com/news">News</a></li>
+        <li><a href="https://what3words.com/shop">Shop</a></li>
+        <li><a href="https://what3words.com/about">About</a></li>
+        <li><a href="https://what3words.com/jobs">Jobs</a></li>
+        <li><a href="https://what3words.com/contact-us">Contact us</a></li>
+      </ul>
+    </nav>
+    <ul class="drawer-legal">
+      <li><a href="https://what3words.com/terms">Terms</a></li>
+      <li><a href="https://what3words.com/privacy">Privacy and Cookies</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="docbar">
+  <div class="docbar-inner">
+    <button class="contents-btn" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Contents">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="lbl">Contents</span>
+    </button>
+    <a class="site-name" href="/">OpenAPI &amp; AI resources</a>
+    <label class="search">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+      <input id="search" type="search" placeholder="Search endpoints and parameters" aria-label="Search files and endpoints" autocomplete="off">
+      <kbd id="search-kbd">Ctrl K</kbd>
+    </label>
+    <a class="doclink" href="https://developer.what3words.com/">Developer site<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    <a class="btn btn-line key-btn" href="https://accounts.what3words.com/create-api-key">Get an API key</a>
+    <a class="btn btn-red" href="/openapi/openapi.yaml" download="what3words_openapi.yaml">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span class="lbl-long">Download spec</span><span class="lbl-short">Spec</span>
+    </a>
+  </div>
+</div>
+<!-- /shell:top -->
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Site contents">
+    <div class="nav-group"><div class="nav-label">Files</div>
+      <a class="nav-item" href="/openapi/openapi.yaml" download="what3words_openapi.yaml">OpenAPI (YAML)</a>
+      <a class="nav-item" href="/openapi/openapi.json" download="what3words_openapi.json">OpenAPI (JSON)</a>
+      <a class="nav-item" href="/what3words.postman_collection.json" download="what3words.postman_collection.json">Postman collection</a>
+      <a class="nav-item" href="/llms.txt">llms.txt</a>
+      <a class="nav-item" href="/llms-full.txt">llms-full.txt</a>
+    </div>
+    <div class="nav-group"><div class="nav-label">Overview</div>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/#authentication">Authentication</a>
+      <a class="nav-item" href="/#errors">Errors</a>
+      <a class="nav-item" href="/openapi/" aria-current="page">All endpoints</a>
+    </div>
+  </nav>
+  <div class="scrim"></div>
+
+  <main class="content" id="content" tabindex="-1">
+    <div class="content-inner">
+      <h1>Endpoints</h1>
+      <p class="lede">Every operation in the what3words OpenAPI definition, with parameters, response fields and examples.</p>
+      <noscript><p class="load-error">The endpoint browser needs JavaScript. You can download the definition as <a href="/openapi/openapi.yaml">YAML</a> or <a href="/openapi/openapi.json">JSON</a> instead.</p></noscript>
+    </div>
+  </main>
+
+  <aside class="examples" aria-label="Code examples"><div class="examples-inner" id="examples"></div></aside>
+</div>
+
+<!-- shell:bottom (keep identical in index.html and openapi/index.html) -->
+<footer class="corp-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <a class="footer-brand" href="https://what3words.com/" aria-label="what3words home"><img src="/assets/brand/footer-logo.svg" width="192" height="32" alt=""></a>
+      <nav aria-label="what3words social media">
+        <ul class="social">
+          <li><a href="https://www.facebook.com/what3words" aria-label="Facebook"><img src="/assets/brand/facebook.svg" width="32" height="32" alt=""></a></li>
+          <li><a href="https://twitter.com/what3words" aria-label="Twitter"><img src="/assets/brand/twitter.svg" width="32" height="32" alt=""></a></li>
+          <li><a href="https://www.instagram.com/what3words" aria-label="Instagram"><img src="/assets/brand/instagram.svg" width="32" height="32" alt=""></a></li>
+          <li><a href="https://www.linkedin.com/company/what3words" aria-label="LinkedIn"><img src="/assets/brand/linkedin.svg" width="32" height="32" alt=""></a></li>
+          <li><a href="https://www.youtube.com/what3words" aria-label="YouTube"><img src="/assets/brand/youtube.svg" width="32" height="32" alt=""></a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="footer-nav" aria-label="what3words links">
+      <section><h2>Business</h2><ul>
+        <li><a href="https://what3words.com/business/automotive">Automotive</a></li>
+        <li><a href="https://what3words.com/business/ecommerce">E-commerce</a></li>
+        <li><a href="https://what3words.com/business/logistics">Logistics</a></li>
+        <li><a href="https://what3words.com/business/emergency">Emergency &amp; Recovery</a></li>
+        <li><a href="https://what3words.com/business/ride-hailing">Taxi &amp; Ride-hailing</a></li>
+        <li><a href="https://what3words.com/business/navigation">Maps &amp; Navigation</a></li>
+        <li><a href="https://what3words.com/business/infrastructure">Infrastructure, Land &amp; Property</a></li>
+        <li><a href="https://what3words.com/business/travel">Travel, Events &amp; Venues</a></li>
+        <li><a href="https://what3words.com/business/ngos">NGOs</a></li>
+      </ul></section>
+      <section><h2>Products</h2><ul>
+        <li><a href="https://what3words.com/products/pro">what3words Pro</a></li>
+        <li><a href="https://what3words.com/products/what3words-app">what3words app</a></li>
+        <li><a href="https://developer.what3words.com/public-api">what3words API</a></li>
+        <li><a href="https://accounts.what3words.com/select-plan">API plans &amp; pricing</a></li>
+        <li><a href="https://products.what3words.com/integrated-products">Partner integrations</a></li>
+        <li><a href="https://what3words.com/swiftcomplete">Postal address validation</a></li>
+        <li><a href="https://what3words.com/products/batch-converter">Coordinate Converter</a></li>
+        <li><a href="https://demo.what3words.com/">AI &amp; address validation demos</a></li>
+      </ul></section>
+      <section><h2>Resources</h2><ul>
+        <li><a href="https://what3words.com/">Map</a></li>
+        <li><a href="https://what3words.com/news">News</a></li>
+        <li><a href="https://what3words.com/news/blog">Blog</a></li>
+        <li><a href="https://what3words.com/newsletter">Newsletter</a></li>
+        <li><a href="https://what3words.com/business/newsletter">Business newsletter</a></li>
+        <li><a href="https://developer.what3words.com/">Developer</a></li>
+        <li><a href="https://developer.what3words.com/communicate">Partner Assets Hub</a></li>
+        <li><a href="https://developer.what3words.com/design/">Design Assets</a></li>
+      </ul></section>
+      <section><h2>Useful Links</h2><ul>
+        <li><a href="https://support.what3words.com/">Support and FAQs</a></li>
+        <li><a href="https://what3words.com/how-to-use-the-what3words-app">How to use the app</a></li>
+        <li><a href="https://what3words.com/ways-to-use">Ways to use</a></li>
+        <li><a href="https://what3words.com/products/locate-link">Locate Link</a></li>
+        <li><a href="https://what3words.com/community">Community</a></li>
+        <li><a href="https://accounts.what3words.com/">Account</a></li>
+        <li><a href="https://what3words.com/shop">Shop</a></li>
+      </ul></section>
+      <section><h2>Company</h2><ul>
+        <li><a href="https://what3words.com/contact-us">Contact Us</a></li>
+        <li><a href="https://what3words.com/about">About</a></li>
+        <li><a href="https://what3words.com/jobs">Jobs</a></li>
+      </ul></section>
+      <section><h2>Media</h2><ul>
+        <li><a href="https://what3words.com/press/">Press</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1eLTaknsMwlD2TPfsBa9yb6AGOi_1vabm">Media Kit</a></li>
+      </ul></section>
+    </nav>
+    <div class="footer-bottom">
+      <nav aria-label="Download the what3words app">
+        <ul class="stores">
+          <li><a href="https://play.google.com/store/apps/details?id=com.what3words.android&amp;hl=en_GB" aria-label="Get what3words on Google Play"><img src="/assets/brand/google-play.svg" height="48" alt=""></a></li>
+          <li><a href="https://apps.apple.com/gb/app/what3words/id657878530" aria-label="Download what3words on the App Store"><img src="/assets/brand/app-store.svg" height="48" alt=""></a></li>
+          <li><a href="https://appgallery.huawei.com/app/C100194081" aria-label="Get what3words on AppGallery"><img src="/assets/brand/app-gallery.svg" height="48" alt=""></a></li>
+        </ul>
+      </nav>
+      <div class="footer-legal">
+        <ul>
+          <li><a href="https://what3words.com/terms">Terms</a></li>
+          <li><a href="https://what3words.com/privacy">Privacy and Cookies</a></li>
+        </ul>
+        <p>&copy; <span data-year>2026</span> what3words Ltd.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /shell:bottom -->
 </body>
 </html>
