@@ -6,3 +6,5 @@ Allow: /openapi/openapi.json
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /what3words.postman_collection.json
+
+Sitemap: https://openapi.what3words.com/sitemap.xml
